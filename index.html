@@ -88,12 +88,11 @@ window.onload=function(){
 		function rnd(m,n){
 			return parseInt(m+Math.random()*(n-m));
 		}
-		arr=['web/iqiyi/iqiyi.html','web/juhuasuan/juhuasuan.html','web/meilishuo/meilishuo.html','web/xiaomi/xiaomi.html','web/jingdong/jingdong.html','web/oppo/oppo.html','web/soul/soul.html','web/taobao/taobao.html','web/yinyuetai/yinyuetai.html','web/youku/youku.html',];
+		var arr=['web/iqiyi/iqiyi.html','web/juhuasuan/juhuasuan.html','web/meilishuo/meilishuo.html','web/xiaomi/xiaomi.html','web/jingdong/jingdong.html','web/oppo/oppo.html','web/soul/soul.html','web/taobao/taobao.html','web/yinyuetai/yinyuetai.html','web/youku/youku.html',];
 		var arr2=['爱奇艺','聚划算','美丽说','小米','京东','OPPO','灵魂','淘宝','音悦台','优酷'];
 		for(var i=0;i<N;i++){
 			var oA = document.createElement('a');
 			oA.style.background = 'url(img/'+(i+1)+'.png) no-repeat 0 0';
-			oA.href=''+arr[i];
 			oBox.appendChild(oA);
 			var oS=document.createElement('span');
 			oA.appendChild(oS);
@@ -122,11 +121,19 @@ window.onload=function(){
 			aS[i].style.OTransition = '1s all ease '+(N-i)*300+'ms';
 			(function(index){
 				setTimeout(function(){
-					aS[index].style.WebkitTransform = 'rotateY('+360/N*index+'deg) translateZ(350px)';
-					aS[index].style.MozTransform = 'rotateY('+360/N*index+'deg) translateZ(350px)';
-					aS[index].style.MsTransform = 'rotateY('+360/N*index+'deg) translateZ(350px)';
-					aS[index].style.OTransform = 'rotateY('+360/N*index+'deg) translateZ(350px)';
+					aS[index].style.WebkitTransform = 'rotateY('+360/N*index+'deg) translateZ(450px)';
+					aS[index].style.MozTransform = 'rotateY('+360/N*index+'deg) translateZ(450px)';
+					aS[index].style.MsTransform = 'rotateY('+360/N*index+'deg) translateZ(450px)';
+					aS[index].style.OTransform = 'rotateY('+360/N*index+'deg) translateZ(450px)';
 				},0);
+				setTimeout(function(){
+					(function(){
+						var aA=oBox.children;
+						for(var i=0;i<aA.length;i++){
+							aA[i].href=arr[i];	
+						}	
+					})();
+				},4200);
 			})(i);
 		}
 		//拖
@@ -136,12 +143,25 @@ window.onload=function(){
 		var lastY = 0;
 		var x = 0;
 		var y = 0;
+		var timeA=null,bOk=false;
 		var timer = null;
 		oBox.onmousedown=function(ev){
 			clearInterval(timer);
+			clearTimeout(timeA);
+			(function(){
+				var aA=oBox.children;
+				for(var i=0;i<aA.length;i++){
+					aA[i].href='javascript:;';	
+				}	
+			})();
 			var disX = ev.pageX-y;
 			var disY = ev.pageY-x;
-			
+			(function(){
+				  var aA=oBox.children;
+				  for(var i=0;i<aA.length;i++){
+					  aA[i].href='javascript:;';
+				  }
+			})();
 			document.onmousemove=function(ev){
 				x = ev.pageY-disY;
 				y = ev.pageX-disX;
@@ -171,11 +191,22 @@ window.onload=function(){
 					oBox.style.MsTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
 					oBox.style.OTransform = 'perspective(800px) rotateX('+-x/5+'deg) rotateY('+y/5+'deg)';
 					
-					
 					if(Math.abs(iSpeedX)<1)iSpeedX=0;
 					if(Math.abs(iSpeedY)<1)iSpeedY=0;
 					if(iSpeedX==0&&iSpeedY==0){
 						clearInterval(timer);
+						(function(){
+							  var aA=oBox.children;
+							  for(var i=0;i<aA.length;i++){
+								  aA[i].onclick=function(index){
+									  return function(){
+										timeA=setTimeout(function(){
+											window.open(arr[index],'_self');  
+										},700);
+									  };
+								  }(i);
+							  }
+						})();
 					}
 				},30);
 			};
