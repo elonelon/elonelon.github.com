@@ -1,0 +1,2283 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link href="css/base.css" rel="stylesheet"/>
+<link href="css/index.css" rel="stylesheet"/>
+<script>
+	window.onload=function(){
+		var oBox=document.getElementById('b_l');
+		var aImg=oBox.getElementsByTagName('li');
+		var oBox2=document.getElementById('h_r');
+		var aBtn=oBox2.getElementsByTagName('li');
+
+		var oBox1=document.getElementById('n_l_t');
+		var oSp=document.getElementById('sp');
+		var oAbso1=document.getElementById('abso1');
+		var aA=oAbso1.getElementsByTagName('a');
+		for(var i=0;i<aBtn.length;i++){
+			aBtn[i].index=i;
+			aBtn[i].onmouseover=function(){
+				for(var i=0;i<aBtn.length;i++){
+					aBtn[i].className='';
+					aImg[i].className='';
+				}
+				this.className='show';
+				aImg[this.index].className='active';
+
+			};
+		}
+		// 独播
+		oSp.onmouseover=function(){
+			oAbso1.style.display='block';
+			oSp.className='active2';
+		};
+		oSp.onmouseout=function(){
+			oAbso1.style.display='none';
+			oSp.className='';
+		};
+		for(var i=0;i<aA.length;i++){
+			aA[i].onmouseover=function(){
+				for(var i=0;i<aA.length;i++){
+					aA[i].className='';
+				}
+				this.className='show2';
+			};
+		}
+
+	};
+
+</script>
+</head>
+<body>
+	<!-- logo -->
+	<div class="logo_box wrapper">
+		<div class="logo wrap clearFix">
+			<!-- logo -->
+			<a href="#" class="to_logo fl">
+				<h1>爱奇艺</h1>
+			</a>
+			<!-- 搜索框 -->
+			<div class="search clearFix fl">
+				<input type="text" class="fl" placeholder="两个女人的战争"/>
+				<a href="#" class="fl"><span></span>搜全网</a>
+			</div>
+			<!-- 右边导航 -->
+			<div class="menu fr clearFix">
+				<ul class="clearFix"> 
+					<li class="fl">
+						<a href="#">
+							登陆
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							注册
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#">
+							开通VIP
+						</a>
+					</li>
+					<li class="fl dw">
+						<a href="#" class="clearFix">
+							<span class="fl"></span>
+							<p class="fl pos">
+								上传
+								<i class="yd"></i>
+							</p>
+							<b class="fl"></b>
+							
+						</a>
+						
+					</li>
+					<li class="fl">
+						<a href="#" class="clearFix">
+							<p class="fl pos">
+								下载客户端
+								<i class="yd"></i>
+							</p>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#" class="clearFix">
+							<i class="fl">消息</i>
+							<b class="fl"></b>
+						</a>
+					</li>
+					<li class="fl">
+						<a href="#" class="clearFix">
+							<i class="fl">播放记录</i>
+							<b class="fl"></b>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- header -->
+	<div class="header_box wrapper" id="header_box">
+		<div class="b_l" id="b_l">
+			<ul>
+				<li class="active">
+					<a href="#" >
+						<img  src="images/111.jpg" alt=""/>
+					</a>
+				</li>
+				<li>
+					<a href="#" >
+						<img  src="images/112.jpg" alt=""/>
+					</a>
+				</li>
+				<li>
+					<a href="#" >
+						<img  src="images/113.jpg" alt=""/>
+					</a>
+				</li>
+				<li>
+					<a href="#" >
+						<img  src="images/114.jpg" alt=""/>
+					</a>
+				</li>
+				<li>
+					<a href="#" >
+						<img  src="images/115.jpg" alt=""/>
+					</a>
+				</li>
+				<li>
+					<a href="#" >
+						<img  src="images/116.jpg" alt=""/>
+					</a>
+				</li>
+				<li>
+					<a href="#" >
+						<img  src="images/117.jpg" alt=""/>
+					</a>
+				</li>
+				<li>
+					<a href="#" >
+						<img  src="images/118.jpg" alt=""/>
+					</a>
+				</li>
+				<li>
+					<a href="#" >
+						<img  src="images/013.jpg" alt=""/>
+					</a>
+				</li>
+				<li>
+					<a href="#" >
+						<img  src="images/15.jpg" alt=""/>
+					</a>
+				</li>
+
+					</ul>	
+		</div>
+		<div class="h_r" id="h_r">	
+			<ul class="btn">
+				<li class="show">
+					<a href="#" class="active">
+						航海王：路飞大战多弗朗明哥
+					</a>
+					
+				</li>
+				<li>
+					<a href="#">
+						花样姐姐：志玲海底漫步撩人
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						假如我有超能力：超能夺宝记
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						太阳的后裔：双宋一吻定情
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						昆仑决:顾辉完爆对手一战成名
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						张智霖夫妇体验“轮胎”漂流
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						都市妖奇谈：东方奇幻IP钜制
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						穿越谜团：袁弘成最帅男护工
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						韩国银幕CP逆天发糖技能
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						蜜蜂少女队：霆锋备浪漫惊喜
+					</a>
+				</li>
+			</ul>
+		</div>	
+	</div>
+	<!-- hot图片下菜单 -->
+	<div class="hot_box wrapper">
+		<div  class="wrap clearFix">
+			<ul class="clearFix w_one fl">
+				<li>
+					<img src="images/hlogo.png" alt=""/>
+				</li>
+			</ul>
+			<ul class="fl clearFix w_two">
+				<li>
+					<a href="#">娱乐</a>
+					<a href="#">体育</a>
+					<a href="#">资讯啊</a>
+				</li>
+			</ul>
+			<ul class="fl clearFix w_three">
+				<li>
+					<a href="#">娱乐</a>
+					<a href="#">体育</a>
+					<a href="#">电影</a>
+				</li>
+				<li>
+					<a href="#">电视剧</a>
+					<a href="#">体育</a>
+					<a href="#">电影院</a>
+				</li>	
+			</ul>
+			<ul class="fl clearFix w_three">
+				<li>
+					<a href="#">娱乐</a>
+					<a href="#">体育</a>
+					<a href="#">电影</a>
+				</li>
+				<li>
+					<a href="#">体育</a>
+					<a href="#">体育</a>
+					<a href="#">电影</a>
+				</li>	
+			</ul>
+			<ul class="fl clearFix w_three">
+				<li>
+					<a href="#">娱乐</a>
+					<a href="#">体育</a>
+					<a href="#">电影</a>
+				</li>
+				<li>
+					<a href="#">体育</a>
+					<a href="#">体育</a>
+					<a href="#">电影</a>
+				</li>	
+			</ul>
+			<ul class="fl clearFix w_three">
+				<li>
+					<a href="#">娱乐</a>
+					<a href="#">体育</a>
+					<a href="#">电影</a>
+				</li>
+				<li>
+					<a href="#">体育</a>
+					<a href="#">体育</a>
+					<a href="#">纪录片</a>
+				</li>	
+			</ul>
+			<ul class="fl clearFix w_three">
+				<li>
+					<a href="#">娱乐</a>
+					<a href="#">体育</a>
+					<a href="#">电影</a>
+				</li>
+				<li>
+					<a href="#">体育</a>
+					<a href="#">体育</a>
+					<a href="#">纪录片</a>
+				</li>	
+			</ul>
+			<ul class="fl clearFix w_three">
+				<li>
+					<a href="#">风云榜</a>
+					<a href="#">全网影视</a>
+					<a href="#">爱奇艺搜索</a>
+				</li>
+				<li>
+					<a href="#">公益</a>
+					<a href="#">直播间</a>
+					<a href="#">爱奇艺出品</a>
+				</li>	
+			</ul>
+			<ul class="fl clearFix w_four">
+				<li>
+					<a href="#">PPS游戏</a>
+					<a href="#">应用商店</a>
+					<a href="#">爱奇艺搜索<i></i></a>
+				</li>
+				<li>
+					<a href="#">公益</a>
+					<a href="#"><b>VIP</b>会员</a>
+					<a href="#">爱奇艺出品<i></i></a>
+				</li>	
+			</ul>
+		</div>			
+	</div>
+	<!-- 今日焦点新闻块 -->
+	<div class="new_box wrap clearFix">
+	<!--新闻第一块 -->
+		<div class="n_l fl">
+			<div class="n_l_t clearFix" id="n_l_t">	
+				<h2 class="fl">今日焦点   <a href="#">更多></a></h2>
+				<div id="sp"  title="精彩"><i></i>独播
+					<ul class="abso1" id="abso1">
+						<li class="tb">
+							<a  href="#">最好的我们</a>
+						</li>
+						<li>
+							<a href="#">太阳的后裔</a>
+						</li>
+						<li>
+							<a href="#">奇葩说3</a>
+						</li>
+						<li>
+							<a href="#">都市妖奇谈</a>
+						</li>
+						<li class="bnone">
+							<a   href="#" >龙心战纪</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="n_l_c">
+				<h3><a href="#">俄方确认恐怖袭击致A321客机坠毁</a></h3>
+				<ul>
+					<li>
+						<a href="#">巴黎恐袭主脑为比利时人 IS威胁将袭击华盛顿</a>
+					</li>
+					<li>
+						<a href="#">巴黎恐袭主脑为比利时人 IS威胁将袭击华盛顿</a>
+					</li>
+					<li>
+						<a href="#">女儿心酸作文:爸爸只爱手机  万元现金被老鼠咬碎</a>
+					</li>
+					<li>
+						<a href="#">女儿心酸作文:爸爸只爱手机  万元现金被老鼠咬碎</a>
+					</li>
+					<li>
+						<a href="#">巴黎恐袭主脑为比利时人 IS威胁将袭击华盛顿</a>
+					</li>
+					<li>
+						<a href="#">巴黎恐袭主脑为比利时人 IS威胁将袭击华盛顿</a>
+					</li>
+				</ul>
+				<div class="n_l_b clearFix">
+					<div class="fl nn1">
+						<img src="images/76.jpg" alt=""/>
+						<p><a href="#">神仙水只需一眼就心动</a></p>
+					</div>
+					<div class="fl">
+						<img src="images/77.jpg" alt=""/>
+						<p><a href="#">神仙水只需一眼就心动</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--新闻第二块 -->
+		<div class="n_c fl">
+			<div class="c_pos">
+				<a href="#"><img src="images/75.jpg" alt=""/></a>
+				<div class="abso">
+					<div></div>
+					<a href="#"><p>揭明星反感的追星方式 赵丽颖斥旧照遭偷拍</p></a>
+				</div>
+			</div>
+			<div class="n_l_c">
+				<ul>
+					<li>
+						<a href="#">巴黎恐袭主脑为比利时人 IS威胁将袭击华盛顿</a>
+					</li>
+					<li>
+						<a href="#">巴黎恐袭主脑为比利时人 IS威胁将袭击华盛顿</a>
+					</li>
+					<li>
+						<a href="#">女儿心酸作文:爸爸只爱手机  万元现金被老鼠咬碎</a>
+					</li>
+					<li>
+						<a href="#">女儿心酸作文:爸爸只爱手机  万元现金被老鼠咬碎</a>
+					</li>
+					<li>
+						<a href="#">巴黎恐袭主脑为比利时人 IS威胁将袭击华盛顿</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 新闻第三块 -->
+		<div class="n_r fl">
+			<div class="n_l_b clearFix">
+				<div class="fl nn1">
+					<img src="images/76.jpg" alt=""/>
+					<p><a href="#">神仙水只需一眼就心动</a></p>
+				</div>
+				<div class="fl">
+					<img src="images/77.jpg" alt=""/>
+					<p><a href="#">神仙水只需一眼就心动</a></p>
+				</div>
+			</div>
+			<div class="n_l_b clearFix">
+				<div class="fl nn1">
+					<img src="images/76.jpg" alt=""/>
+					<p><a href="#">神仙水只需一眼就心动</a></p>
+				</div>
+				<div class="fl">
+					<img src="images/77.jpg" alt=""/>
+					<p><a href="#">神仙水只需一眼就心动</a></p>
+				</div>
+			</div>
+			<div class="n_l_b clearFix">
+				<div class="fl nn1">
+					<img src="images/76.jpg" alt=""/>
+					<p><a href="#">神仙水只需一眼就心动</a></p>
+				</div>
+				<div class="fl">
+					<img src="images/77.jpg" alt=""/>
+					<p><a href="#">神仙水只需一眼就心动</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 综艺 -->
+	<div class="variety_box clearFix wrap">
+		<div class="variety fl">
+			<div class="v_t clearFix">
+				<h3 class="fl">
+					<a href="#">
+						综艺	
+					</a>
+					<a href="#"><span>更多></span></a>
+				</h3>
+				<ul class="fl clearFix">
+					<li>
+						<a href="#">爱上超模第二季</a>
+					</li>
+					<li>
+						<a href="#">奇葩说3</a>
+					</li>
+					<li>
+						<a href="#">大学生来了</a>
+					</li>
+					<li>
+						<a href="#">二十四小时</a>
+					</li>
+					<li class="bn">
+						<a href="#">韩国综艺</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="v_b">
+				<li>
+					<div class="pos2">
+						<a href="#"><img src="images/zy2.jpg" alt=""/></a>
+						<i></i>
+						<strong></strong>
+						<span></span>
+						<b></b>
+						<div class="v_b_b">
+							<p><a href="#">看见你的声音</a></p>
+							<p>幕后杨宗纬”现场认亲 搜查队被嫌黄韵玲怒掀凳子</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/22.jpg" alt=""/></a>
+						<span></span>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/22.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<strong></strong>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/22.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<strong></strong>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/22.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/22.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<strong></strong>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/22.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- 精彩推荐 -->
+		<div class="wonderful fl">
+			<div class="w_t clearFix">
+				<h3 class="fl clearFix">
+					<a class="fl" href="#">
+						精彩推荐	
+					</a>
+					<span class="fr"><a href="#">更多</a></span>
+				</h3>
+				<div class="w_b">
+					<div>
+						<a href="#"><img src="images/31.jpg" alt=""/></a>
+					</div>
+					<div class="w_b_b">
+						<p><a href="#">跑男4月15日全网首播</p></a>
+						<ul>
+							<li>
+								<a href="#">宋仲基成名之路全回顾</a>
+							</li>
+							<li>
+								<a href="#">宋仲基成名之路全回顾</a>
+							</li>
+							<li>
+								<a href="#">宋仲基成名之路全回顾</a>
+							</li>
+							<li>
+								<a href="#">宋仲基成名之路全回顾</a>
+							</li>
+							<li>
+								<a href="#">宋仲基成名之路全回顾</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--脱口秀 -->
+	<div class="tkx wrap clearFix">
+		<h3 class="fl">
+			<a href="#">
+				脱口秀	
+			</a>
+			<span><a href="#">更多></a></span>
+		</h3>
+		<ul class="v_b">
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/30.jpg" alt=""/></a>
+						<span></span>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">四大名助</a></p>
+							<p>老妈痴恋韩国欧巴引女儿不满</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/30.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<strong></strong>
+						<div class="v_b_b2">
+							<p><a href="#">四大名助</a></p>
+							<p>老妈痴恋韩国欧巴引女儿不满</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/30.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<strong></strong>
+						<div class="v_b_b2">
+							<p><a href="#">四大名助</a></p>
+							<p>老妈痴恋韩国欧巴引女儿不满</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/26.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">四大名助</a></p>
+							<p>老妈痴恋韩国欧巴引女儿不满</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/26.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<strong></strong>
+						<div class="v_b_b2">
+							<p><a href="#">四大名助</a></p>
+							<p>老妈痴恋韩国欧巴引女儿不满</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/26.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">四大名助</a></p>
+							<p>老妈痴恋韩国欧巴引女儿不满</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+	</div>
+	<!-- 娱乐 -->
+	<div class="variety_box clearFix wrap">
+		<div class="fl">
+			<div class="v_t2 clearFix">
+				<h3 class="fl">
+					<a href="#">
+						娱乐	
+					</a>
+					<a href="#"><span>更多></span></a>
+				</h3>
+				<ul class="fl clearFix">
+					<li>
+						<a href="#">大牌对王牌</a>
+					</li>
+					<li>
+						<a href="#"> 爱奇艺早班机</a>
+					</li>
+					<li>
+						<a href="#">超能大星探</a>
+					</li>
+					<li>
+						<a href="#">二十四小时</a>
+					</li>
+					<li class="bn">
+						<a href="#">娱乐猛回头</a>
+					</li>
+				</ul>
+				<a class="fr" href="#"><img src="images/wz.png" alt=""/></a>
+			</div>
+			<ul class="v_b">
+				<li>
+					<div class="pos2">
+						<a href="#"><img src="images/yl.jpg" alt=""/></a>
+						<i></i>
+						<strong></strong>
+						<span></span>
+						<b></b>
+						<div class="v_b_b">
+							<p><a href="#">看见你的声音</a></p>
+							<p>幕后杨宗纬”现场认亲 搜查队被嫌黄韵玲怒掀凳子</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/33.jpg" alt=""/></a>
+						<span></span>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">鹿晗巡回演唱会完美收官 跑男兄弟邓超李晨助阵</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/33.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<strong></strong>
+						<div class="v_b_b2">
+							<p><a href="#">《大牌对王牌》精彩花絮 陈楚河展化身完美男友</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/33.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<strong></strong>
+						<div class="v_b_b2">
+						<div class="v_b_b2">
+							<p><a href="#">《大牌对王牌》精彩花絮 陈楚河展化身完美男友</a></p>
+						</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/33.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">《大牌对王牌》精彩花絮 陈楚河展化身完美男友</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/34.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<strong></strong>
+						<div class="v_b_b2">
+							<p><a href="#">鹿晗巡回演唱会完美收官 跑男兄弟邓超李晨助阵</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/34.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">鹿晗巡回演唱会完美收官 跑男兄弟邓超李晨助阵</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/34.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">鹿晗巡回演唱会完美收官 跑男兄弟邓超李晨助阵</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/34.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">鹿晗巡回演唱会完美收官 跑男兄弟邓超李晨助阵</a></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 猜你喜欢 -->
+	<div class="link_box clearFix wrap">
+		<div class="fl">
+			<div class="v_t2 clearFix">
+				<h3 class="fl">
+					<a href="#">
+						猜你喜欢	
+					</a>
+					<a href="#"><span>更多></span></a>
+				</h3>
+				<ul class="fl clearFix">
+					<li>
+						<a href="#">大牌对王牌</a>
+					</li>
+					<li>
+						<a href="#"> 爱奇艺早班机</a>
+					</li>
+					<li>
+						<a href="#">超能大星探</a>
+					</li>
+					<li>
+						<a href="#">二十四小时</a>
+					</li>
+					<li class="bn">
+						<a href="#">娱乐猛回头</a>
+					</li>
+				</ul>
+				<span class="fr" ><a href="#"><i></i>换一换</a></span>
+			</div>
+			<ul class="v_b">
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/27.jpg" alt=""/></a>
+						<span></span>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/27.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<strong></strong>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/27.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<strong></strong>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/27.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/27.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<strong></strong>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/27.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/42.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/42.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/42.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/42.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="pos3">
+						<a href="#"><img src="images/42.jpg" alt=""/></a>
+						<span></span>
+						<b></b>
+						<div class="v_b_b2">
+							<p><a href="#">女婿上门了</a></p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li class="grzx">
+					<a href="#">进入个人中心></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 爱频道 -->
+	<div class="love clearFix wrap">
+		<div class="fl">
+			<div class="v_t2 clearFix">
+				<h3 class="fl">
+					<a href="#">
+						爱频道	
+					</a>
+					<a href="#"><span>更多></span></a>
+				</h3>
+			</div>
+		</div>
+		<ul class="l_b clearFix fl">
+			<li class="fl">
+				<div class="dy_box clearFix">
+					<div class="tp fl">
+						<a href="#"><img width="54" height="54"src="images/yx.jpg" alt="" /></a>
+					</div>
+					<div class="dm fl">
+						<p><a href="#">企鹅动漫</a></p>
+						<p><i>视频</i>  420</p>
+						<p><i>粉丝</i>  42万</p>
+					</div>
+					<div class="qe fl">“企鹅娘自家原创，惊喜不断”</div>
+					<div class="dy fl">
+						<a href="#">+订阅</a>
+					</div>
+				</div>
+			</li>
+			<li class="fl">
+				<div class="dy_box clearFix">
+					<div class="tp fl">
+						<a href="#"><img width="54" height="54"src="images/yx.jpg" alt="" /></a>
+					</div>
+					<div class="dm fl">
+						<p><a href="#">企鹅动漫</a></p>
+						<p><i>视频</i>  420</p>
+						<p><i>粉丝</i>  42万</p>
+					</div>
+					<div class="qe fl">“企鹅娘自家原创，惊喜不断”</div>
+					<div class="dy fl">
+						<a href="#">+订阅</a>
+					</div>
+				</div>
+			</li>
+			<li class="fl">
+				<div class="dy_box clearFix">
+					<div class="tp fl">
+						<a href="#"><img width="54" height="54"src="images/yx.jpg" alt="" /></a>
+					</div>
+					<div class="dm fl">
+						<p><a href="#">企鹅动漫</a></p>
+						<p><i>视频</i>  420</p>
+						<p><i>粉丝</i>  42万</p>
+					</div>
+					<div class="qe fl">“企鹅娘自家原创，惊喜不断”</div>
+					<div class="dy fl">
+						<a href="#">+订阅</a>
+					</div>
+				</div>
+			</li>
+			<li class="fl">
+				<div class="dy_box clearFix">
+					<div class="tp fl">
+						<a href="#"><img width="54" height="54"src="images/yx.jpg" alt="" /></a>
+					</div>
+					<div class="dm fl">
+						<p><a href="#">企鹅动漫</a></p>
+						<p><i>视频</i>  420</p>
+						<p><i>粉丝</i>  42万</p>
+					</div>
+					<div class="qe fl">“企鹅娘自家原创，惊喜不断”</div>
+					<div class="dy fl">
+						<a href="#">+订阅</a>
+					</div>
+				</div>
+			</li>
+			<li class="fl">
+				<div class="dy_box clearFix">
+					<div class="tp fl">
+						<a href="#"><img width="54" height="54"src="images/yx.jpg" alt="" /></a>
+					</div>
+					<div class="dm fl">
+						<p><a href="#">企鹅动漫</a></p>
+						<p><i>视频</i>  420</p>
+						<p><i>粉丝</i>  42万</p>
+					</div>
+					<div class="qe fl">“企鹅娘自家原创，惊喜不断”</div>
+					<div class="dy fl">
+						<a href="#">+订阅</a>
+					</div>
+				</div>
+			</li>
+			<li class="fl">
+				<div class="dy_box clearFix">
+					<div class="tp fl">
+						<a href="#"><img width="54" height="54"src="images/yx.jpg" alt="" /></a>
+					</div>
+					<div class="dm fl">
+						<p><a href="#">企鹅动漫</a></p>
+						<p><i>视频</i>  420</p>
+						<p><i>粉丝</i>  42万</p>
+					</div>
+					<div class="qe fl">“企鹅娘自家原创，惊喜不断”</div>
+					<div class="dy fl">
+						<a href="#">+订阅</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- 推广广告 -->
+	<div class="promote clearFix wrap">
+		<div class="p_t">
+			推广广告
+		</div>
+		<div class="p_b">
+			<span class="pa1"></span>
+			<span class="pa2"></span>
+			<ul class="clearFix">
+				<li class="fl">
+					<div class="clearFix">
+						<a href="#"><img src="images/019.jpg" alt=""/></a>
+						<a href="#"><img src="images/xpp.jpg" alt=""/></a>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="clearFix">
+						<a href="#"><img src="images/zjy.jpg" alt=""/></a>
+						<a href="#"><img src="images/zij2.jpg" alt=""/></a>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="clearFix">
+						<a href="#"><img src="images/019.jpg" alt=""/></a>
+						<a href="#"><img src="images/xpp.jpg" alt=""/></a>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="clearFix">
+						<a href="#"><img src="images/zjy.jpg" alt=""/></a>
+						<a href="#"><img src="images/zij2.jpg" alt=""/></a>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="clearFix">
+						<a href="#"><img src="images/019.jpg" alt=""/></a>
+						<a href="#"><img src="images/xpp.jpg" alt=""/></a>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="clearFix">
+						<a href="#"><img src="images/zjy.jpg" alt=""/></a>
+						<a href="#"><img src="images/zij2.jpg" alt=""/></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 电影 -->
+	<div class="movie wrap">
+		<div class="variety_box clearFix wrap">
+			<div class="variety fl">
+			<div class="v_t clearFix">
+				<h3 class="fl">
+					<a href="#">
+						电影	
+					</a>
+					<a href="#"><span>更多></span></a>
+				</h3>
+				<ul class="fl clearFix">
+					<li>
+						<a href="#">爱奇艺爱电影</a>
+					</li>
+					<li>
+						<a href="#">网络大电影</a>
+					</li>
+					<li>
+						<a href="#">VIP会员</a>
+					</li>
+					<li>
+						<a href="#">北京国际电影节在线影展</a>
+					</li>
+					<li class="bn">
+						<a href="#">超级英雄上演世纪对决</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="m_b clearFix">
+				<li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/52.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/52.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/52.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/52.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/52.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li><li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/52.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li><li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/52.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li><li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/52.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li><li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/52.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li><li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/52.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- 电影榜 -->
+			<div class="wonderful fl">
+				<div class="w_t clearFix">
+					<h3 class="fl clearFix">
+						<a class="fl" href="#">
+							电影榜	
+						</a>
+						<span class="fr"><a href="#">更多</a></span>
+					</h3>
+				</div>
+				<ul class="w_bb">
+					<li class="clearFix">
+						<i class="fl backgr">1</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl backgr">2</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl backgr">3</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl">4</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl">5</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl">6</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl">7</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="jt fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl">8</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl">9</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="jt fr"></p>
+					</li>
+				</ul>
+				<div class="pos4">
+					<a href="#"><img src="images/52.jpg" alt=""/></a>
+					<em></em>
+					<strong></strong>
+					<b></b>
+					<div class="v_b_b2">
+						<p class="name clearFix">
+							<a class="fl" href="#">女婿上门了</a>
+							<span class="fr">8.<i>4</i></span>
+						</p>
+						<p>胡渐彪斥邱晨虚伪战火升级</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 微电影 片花-->
+	<div class="wrap">
+	<div class="film_box clearFix">
+		<div class="film fl">
+			<div class="v_t3 clearFix">
+				<h3 class="fl">
+					<a href="#">
+						微电影	
+					</a>
+					<a href="#"><span>更多></span></a>
+				</h3>
+				<ul class="fl clearFix">
+					<li>
+						<a href="#">新学院派"导演特区"</a>
+					</li>
+					<li class="bn">
+						<a href="#">全国大学生一分钟影像大赛</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="v_b clearFix">
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/35.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/35.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/35.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- 片花 -->
+		<div class="trailers fl">
+			<div class="v_t3 clearFix">
+				<h3 class="fl">
+					<a href="#">
+						片花	
+					</a>
+					<a href="#"><span>更多></span></a>
+				</h3>
+				<ul class="fl clearFix">
+					<li>
+						<a href="#">《蝙超大战》观影必看</a>
+					</li>
+					<li class="bn">
+						<a href="#">《疯狂动物城》超长片段</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="v_b clearFix">
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/20.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/20.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/20.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<!-- 电视剧 -->
+	<div class="movie wrap">
+		<div class="variety_box clearFix wrap">
+			<div class="variety fl">
+			<div class="v_t clearFix">
+				<h3 class="fl">
+					<a href="#">
+						电视剧	
+					</a>
+					<a href="#"><span>更多></span></a>
+				</h3>
+				<ul class="fl clearFix">
+					<li>
+						<a href="#">内地</a>
+					</li>
+					<li>
+						<a href="#">台湾</a>
+					</li>
+					<li>
+						<a href="#">韩剧</a>
+					</li>
+					<li>
+						<a href="#">日剧</a>
+					</li>
+					<li class="bn">
+						<a href="#">美剧</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="m_b clearFix">
+				<li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/45.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/45.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/45.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/45.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/45.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li><li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/45.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li><li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/45.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li><li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/45.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li><li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/45.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li><li class="fl">
+					<div class="pos4">
+						<a href="#"><img src="images/45.jpg" alt=""/></a>
+						<em></em>
+						<strong></strong>
+						<b></b>
+						<div class="v_b_b2">
+							<p class="name clearFix">
+								<a class="fl" href="#">女婿上门了</a>
+								<span class="fr">8.<i>4</i></span>
+							</p>
+							<p>胡渐彪斥邱晨虚伪战火升级</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- 电视剧榜 -->
+			<div class="wonderful fl">
+				<div class="w_t clearFix">
+					<h3 class="fl clearFix">
+						<a class="fl" href="#">
+							电视剧榜	
+						</a>
+						<span class="fr"><a href="#">更多</a></span>
+					</h3>
+				</div>
+				<ul class="w_bb">
+					<li class="clearFix">
+						<i class="fl backgr">1</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl backgr">2</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl backgr">3</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl">4</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl">5</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl">6</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl">7</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="jt fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl">8</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="fr"></p>
+					</li>
+					<li class="clearFix">
+						<i class="fl">9</i>
+						<a class="fl" href="#">从天儿降</a>
+						<p class="jt fr"></p>
+					</li>
+				</ul>
+				<div class="pos4">
+					<a href="#"><img src="images/61.jpg" alt=""/></a>
+					<em></em>
+					<strong></strong>
+					<b></b>
+					<div class="v_b_b2">
+						<p class="name clearFix">
+							<a class="fl" href="#">女婿上门了</a>
+							<span class="fr">8.<i>4</i></span>
+						</p>
+						<p>胡渐彪斥邱晨虚伪战火升级</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 推广广告 -->
+	<div class="promote clearFix wrap">
+		<div class="p_t">
+			推广广告
+		</div>
+		<div class="p_b">
+			<span class="pa1"></span>
+			<span class="pa2"></span>
+			<ul class="clearFix">
+				<li class="fl">
+					<div class="clearFix">
+						<a href="#"><img src="images/019.jpg" alt=""/></a>
+						<a href="#"><img src="images/xpp.jpg" alt=""/></a>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="clearFix">
+						<a href="#"><img src="images/zjy.jpg" alt=""/></a>
+						<a href="#"><img src="images/zij2.jpg" alt=""/></a>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="clearFix">
+						<a href="#"><img src="images/019.jpg" alt=""/></a>
+						<a href="#"><img src="images/xpp.jpg" alt=""/></a>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="clearFix">
+						<a href="#"><img src="images/zjy.jpg" alt=""/></a>
+						<a href="#"><img src="images/zij2.jpg" alt=""/></a>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="clearFix">
+						<a href="#"><img src="images/019.jpg" alt=""/></a>
+						<a href="#"><img src="images/xpp.jpg" alt=""/></a>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="clearFix">
+						<a href="#"><img src="images/zjy.jpg" alt=""/></a>
+						<a href="#"><img src="images/zij2.jpg" alt=""/></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 动漫 儿童-->
+	<div class="wrap">
+	<div class="film_box clearFix">
+		<div class="film fl">
+			<div class="v_t3 clearFix">
+				<h3 class="fl">
+					<a href="#">
+						动漫	
+					</a>
+					<a href="#"><span>更多></span></a>
+				</h3>
+				<ul class="fl clearFix">
+					<li>
+						<a href="#">新学院派"导演特区"</a>
+					</li>
+					<li class="bn">
+						<a href="#">全国大学生一分钟影像大赛</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="v_b clearFix">
+				<li class="fl">
+					<div class="pos2">
+						<a href="#"><img height="257" width="380"src="images/dm.jpg" alt=""/></a>
+						<i></i>
+						<strong></strong>
+						<span></span>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">海贼王</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/35.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/35.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- 儿童 -->
+		<div class="trailers fl">
+			<div class="v_t3 clearFix">
+				<h3 class="fl">
+					<a href="#">
+						儿童
+					</a>
+					<a href="#"><span>更多></span></a>
+				</h3>
+				<ul class="fl clearFix">
+					<li>
+						<a href="#">《蝙超大战》观影必看</a>
+					</li>
+					<li class="bn">
+						<a href="#">《疯狂动物城》超长片段</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="v_b clearFix">
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/et.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/et2.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/et.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/et2.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/et.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/et2.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	</div>
+	<!-- 游戏 -->
+	<div class="wrap">
+	<div class="film_box clearFix">
+		<div class="film fl">
+			<div class="v_t3 clearFix">
+				<h3 class="fl">
+					<a href="#">
+						游戏	
+					</a>
+					<a href="#"><span>更多></span></a>
+				</h3>
+				<ul class="fl clearFix">
+					<li>
+						<a href="#">新学院派"导演特区"</a>
+					</li>
+					<li class="bn">
+						<a href="#">全国大学生一分钟影像大赛</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="v_b clearFix">
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/yx4.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/yx4.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/yx4.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- pps奇秀 -->
+		<div class="trailers fl">
+			<div class="v_t3 clearFix">
+				<h3 class="fl">
+					<a href="#">
+						pps奇秀
+					</a>
+					<a href="#"><span>更多></span></a>
+				</h3>
+				<ul class="fl clearFix">
+					<li>
+						<a href="#">《蝙超大战》观影必看</a>
+					</li>
+					<li class="bn">
+						<a href="#">《疯狂动物城》超长片段</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="v_b clearFix">
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/yx4.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/yx4.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="fl">
+					<div class="pos5">
+						<a href="#"><img src="images/yx4.jpg" alt=""/></a>
+						<b></b>
+						<div class="v_b_b3">
+							<p><a href="#">渐冻人的不冻人生</a></p>
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	</div>
+	<!-- 公益 -->
+	<div class="public wrap">
+		<ul class="clearFix">
+			<li class="fl">
+				<div class="pos_p">
+					<a href="#">
+						<img src="images/zd.jpg" alt=""/>
+					</a>
+					<div class="abs_p">
+						<div></div>
+						<a href="#"><p>爱奇艺公益寻亲平台</p></a>
+					</div>
+				</div>
+				<div class="pu_p">
+					<a href="#">公益频道</a>
+					<span>更多></span>
+				</div>
+			</li>
+			<li class="fl">
+				<div class="pos_p">
+					<a href="#">
+						<img src="images/zd.jpg" alt=""/>
+					</a>
+					<div class="abs_p">
+						<div></div>
+						<a href="#"><p>爱奇艺公益寻亲平台</p></a>
+					</div>
+				</div>
+				<div class="pu_p">
+					<a href="#">公益频道</a>
+					<span>更多></span>
+				</div>
+			</li>
+			<li class="fl">
+				<div class="pos_p">
+					<a href="#">
+						<img src="images/zd.jpg" alt=""/>
+					</a>
+					<div class="abs_p">
+						<div></div>
+						<a href="#"><p>爱奇艺公益寻亲平台</p></a>
+					</div>
+				</div>
+				<div class="pu_p">
+					<a href="#">公益频道</a>
+					<span>更多></span>
+				</div>
+			</li>
+			<li class="fl">
+				<div class="pos_p">
+					<a href="#">
+						<img src="images/zd.jpg" alt=""/>
+					</a>
+					<div class="abs_p">
+						<div></div>
+						<a href="#"><p>爱奇艺公益寻亲平台</p></a>
+					</div>
+				</div>
+				<div class="pu_p">
+					<a href="#">公益频道</a>
+					<span>更多></span>
+				</div>
+			</li>
+			<li class="fl">
+				<div class="pos_p">
+					<a href="#">
+						<img src="images/zd.jpg" alt=""/>
+					</a>
+					<div class="abs_p">
+						<div></div>
+						<a href="#"><p>爱奇艺公益寻亲平台</p></a>
+					</div>
+				</div>
+				<div class="pu_p">
+					<a href="#">公益频道</a>
+					<span>更多></span>
+				</div>
+			</li>
+			<li class="fl">
+				<div class="pos_p">
+					<a href="#">
+						<img src="images/zd.jpg" alt=""/>
+					</a>
+					<div class="abs_p">
+						<div></div>
+						<a href="#"><p>爱奇艺公益寻亲平台</p></a>
+					</div>
+				</div>
+				<div class="pu_p">
+					<a href="#">公益频道</a>
+					<span>更多></span>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- 合作伙伴 -->
+	<div class="partner clearFix wrap">
+		<div class="fl par_l">
+			<h2>
+				<a href="#">合作伙伴<span>更多></span></a>	
+			</h2>
+			<ul class="clearFix">
+				<li class="fl">
+					<a href="#">万达电影院</a>
+				</li>
+				<li class="fl">
+					<a href="#">华谊兄弟</a>
+				</li>
+				<li class="fl">
+					<a href="#">星美</a>
+				</li>
+				<li class="fl">
+					<a href="#">光线影业</a>
+				</li>
+				<li class="fl">
+					<a href="#">电影网</a>
+				</li>
+				<li class="fl">
+					<a href="#">华策影视</a>
+				</li>
+				<li class="fl">
+					<a href="#">百老汇</a>
+				</li>
+				<li class="fl">
+					<a href="#">百度视频</a>
+				</li>
+				<li class="fl">
+					<a href="#">百度百科</a>
+				</li>
+				<li class="fl">
+					<a href="#">hao123</a>
+				</li>
+				<li class="fl">
+					<a href="#">百度V计划</a>
+				</li>
+				<li class="fl">
+					<a href="#">央广视讯</a>
+				</li>
+				<li class="fl">
+					<a href="#">华录百纳</a>
+				</li>
+				<li class="fl">
+					<a href="#">百度贴吧</a>
+				</li>
+				<li class="fl">
+					<a href="#">爱奇艺天猫店</a>
+				</li>
+				<li class="fl">
+					<a href="#">智能电视网</a>
+				</li>
+			</ul>
+		</div>
+		<div class="fl par_r">
+			<h2>
+				<a href="#">爱奇艺动态<span>更多></span></a>	
+			</h2>
+			<ul class="clearFix">
+				<li class="fl">
+					<a href="#">《太阳的后裔》拉动商城销量</a>
+				</li>
+				<li class="fl">
+					<a href="#">爱奇艺与环球音乐达成深度合作</a>
+				</li>
+				<li class="fl">
+					<a href="#">爱奇艺推出会员观看加速功能</a>
+				</li>
+				<li class="fl">
+					<a href="#">《跑男3》春节返场获3.3亿互动</a>
+				</li>
+				<li class="fl">
+					<a href="#">2016爱奇艺汽车大数据营销盛典</a>
+				</li>
+				<li class="fl">
+					<a href="#">爱奇艺在日主导创建动漫盈利模型</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 尾部 -->
+	<div class="footer_box wrapper">
+		<div class="footer wrap">
+			<div class="f_t">
+				<a href="#">公司介绍</a>
+				<i>|</i>
+				<a href="#">新闻动态</a>
+				<i>|</i>
+				<a href="#">联系方式</a>
+				<i>|</i>
+				<a href="#">招聘英才</a>
+				<i>|</i>
+				<a href="#">爱奇艺实验室</a>
+				<i>|</i>
+				<a href="#">开放平台</a>
+				<i>|</i>
+				<a href="#">应用商店</a>
+				<i>|</i>
+				<a href="#">爱奇艺论坛</a>
+				<i>|</i>
+				<a href="#">帮助与反馈</a>
+				<i>|</i>
+				<a href="#">侵权投诉</a>
+				<i>|</i>
+				<a href="#">公司介绍</a>
+				<i>|</i>
+				<a href="#">About Us</a>
+			</div>
+			<div class="f_b">
+				<span>违法和不良信息举报电话：400-923-7171<span>
+				<span>举报邮箱：jubao365@qiyi.com</span>
+			</div>	
+		</div>
+		<ul class="foot_box wrap">
+			<li class="fl">
+				<div class="clearFix">
+					<a href="#">京网文[2015]0652-282号-1</a>
+				</div>
+				<div>
+					<a href="#">京ICP证110636号</a>
+				</div>
+				<div>
+					<a href="#">出版物经营许可证 </a>
+				</div>
+			</li>
+			<li class="fl">
+				<div class="tb">
+					<a href="#">中国互联网诚信联盟</a>
+				</div>
+				<div class="tb2">
+					<a href="#"> 经营性网站备案信息</a>
+				</div>
+			</li>
+			<li class="fl">
+				<div class="tb3">
+					<a href="#">中国互联网举报中心</a>
+				</div>
+				<div>
+					<a href="#">京公网安备 11010802010263号</a>
+				</div>
+			</li>
+			<li class="fl">
+				<div>
+					<a href="#">信息网络传播视听节目许可证 0110544号</a>
+				</div>
+				<div>
+					<a href="#">增值电信业务经营许可证 B2-20120273</a>
+				</div>
+			</li>
+			<li class="fl">
+				<div class="clearFix">
+					<a href="#">广播电视节目制作经营许可证 (京)字第1938号</a>
+				</div>
+				<div>
+					<a href="#">互联网药品信息服务资格证书 (京)-经营性-2013-0012</a>
+				</div>
+			</li>
+		</ul>
+		<div class="ws wrap">
+			Copyright © 2016 爱奇艺 All Rights Reserved
+		</div>
+	</div>		
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+.header {min-width:1210px;background:#f7f7f7;border-bottom:1px solid #eee;}
+/*左边*/
+.header_in {width:1210px;margin:0 auto;height:30px;}
+.head_l {padding-left:1px;margin-top:7px;} .head_l p {height:16px;} 
+.head_l p a,.head_l p span  {color:#666;line-height:12px;margin-top:2px;} .head_l p span {font-weight:bold;margin-right:4px;}
+.head_l p i {width:12px;height:12px;background:url(../images/spirite.png) 0px 0px;margin:2px 3px 0 0;}
+.head_l p .i1 {background-position:-13px 0;margin-right:6px;} 
+.head_l p .i2 {width:10px;height:16px;background-position:-26px 0;margin:0 8px 0 0;}
+.head_l .p_mr {margin-right:20px;} .head_l .p_mr1 {margin-right:12px;}
+
+/*右边01*/
+.head_r {margin:5px 8px 0 3px;} .head_r li,.head_c p {height:22px;} 
+.head_r li b {width:13px;height:22px;background:url(../images/spirite.png) -84px 0px;margin-right:10px;}
+.head_r li a {color:#666;line-height:12px;margin:4px 9px 0 0;}
+.head_r li em {width:7px;height:4px;background:url(../images/spirite.png) -98px 0px;margin-top:8px;transition:all 0.3s ease-in-out;} .head_r li:hover em {transform:rotate(180deg);}
+.head_r li i {height:12px;border-left:1px solid #ddd;margin:4px 11px 0 8px;}
+
+/*右边02*/
+.head_c {margin-top:5px;}
+.head_c p a {color:#666;line-height:12px;margin-top:4px;} .head_c p .a1 {margin-right:7px;}
+.head_c p em {width:24px;height:11px;background:url(../images/spirite.png) -37px 0px;margin:4px 4px 0 0;}
+.head_c p .em1 {width:21px;background-position:-62px 0px;margin-right:7px;}
+.head_c p i {height:12px;border-left:1px solid #ddd;margin:4px 9px 0 12px;}
+.head_c p .c_i1 {margin-right:11px;}
+
+
+
+
+ 
+

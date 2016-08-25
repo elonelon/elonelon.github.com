@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<style>
+	/*头部*/
+	.music {width:1007px;background:#f2f2f2;margin:20px auto 0;}
+	.head {height:41px;background:url(images/h-bg02.png) repeat-x;position:relative;}
+	.h1_a {display:block;width:92px;height:41px;text-indent:-9999em;background:url(images/logo.png);}
+	.head_in {width:583px;height:41px;margin-left:23px;}
+	.head_l {height:41px;width:158px;}
+	.h_a {padding:0 8px;height:41px;} .h_a_p {position:relative;} .img1 {position:absolute;top:3px;right:-18px;}
+	.h_a1 {padding:0 6px 0 0;color:#ccc;font-size:11px;line-height:41px;} .h_a2 {color:#ccc;font-size:11px;line-height:41px;padding-left:7px;}
+	.img2 {position:absolute;top:13px;right:189px;cursor:pointer;}
+	.h_a_t {color:#ccc;font-size:11px;line-height:41px;} .c_c {color:#80e173;}
+	.ar {width:0;height:0;border:4px solid transparent;border-top:4px solid #999;margin-left:3px;margin-top:19px;}
+	.b1,.b2 {height:16px;border-left:1px dotted #717171;margin-top:13px;} .b2 {margin:10px 7px 0;border-style:solid;height:14px;}
+	.in1 {width:95px;heigth:29px;background:#d7d7d7;font-size:10px;color:#aea9a9;border-radius:14px;line-height:29px;margin-top:7px;padding-left:12px;margin-left:22px;}
+	
+	/*内容*/
+	.con {height:378px;margin:0 auto;background:url(images/h-bg01.png) no-repeat;position:relative;}
+	.con .banner {width:315px;height:12px;position:absolute;bottom:21px;left:330px;}
+	.banner .b_in {width:13px;height:12px;float:left;border-radius:50%;background:#cfb5aa;margin-right:24px;}
+	 .banner .l_b_in {margin-right:0;} .banner .f_b_in {background:#9fbe15;} .banner .b_in:hover {background:#9fbe15;}
+	.biaoti {height:70px;position:relative;} .num {position:absolute;top:0;left:163px;color:#f8d2ff;font-size:9px;}
+	.b_a {margin-left:17px;width:249px;height:40px;float:left;background:url(images/ico_index.png) no-repeat 0 -91px;margin-top:20px;}
+	.b_c {width:169px;height:58px;background-position:0 -138px;margin-top:0;}
+	.b_d {background-position:0 -321px;} .b_e {background-position:0 -367px;} .b_f {background-position:0 -597px;}
+	.b_g {background-position:0 -735px;margin-top:30px;} .b_g_color {background:#fff;border-top:1px solid ##e8e8e8;height:80px;}
+	.txt {font-size:11px;color:#999;margin-top:36px;}
+	.b3 {height:32px;border-left:1px solid #717171;margin:25px 10px 0 13px;}
+	.daohang {margin-top:30px;height:28px;padding-right:19px;} .daohang1 {margin-top:42px;}
+	
+	
+	
+	.b_a1 {font-size:12px;color:#666;line-height:28px;} .b_a1:hover {border-bottom:2px solid #690;}
+	.t_i {height:10px;border-left:1px dotted #717171;margin:9px 17px 0 18px;}
+	
+	.con2 {width:970px;height:279px;margin:0 auto;margin-bottom:59px;}
+	.ul {width:474px;}
+	.left,.li,.li1,.li2 {padding:2px;border:1px solid #e8e8e8;position:relative;}  .con2 a,.con3 a,.con4 a {display:block;position:relative;}
+	.p8 {width:220px;height:11px;text-indent:10px;position:absolute;left:0;bottom:9px;color:#fff;font-size:11px;}
+	.li,.li1 {margin-bottom:19px;} .li1 {margin-left:22px;} .li3 {margin-bottom:0;}
+	.diyi,.dier {position:absolute;top:2px;left:2px;width:22px;height:22px;color:#fff;font-size:13px;font-weight:bold;background:#e593a1;text-align:center;line-height:22px;z-index:101;}  .dier {background:#89b8d5;}
+	.change {width:42px;height:49px;background:#f2f2f2;position:absolute;right:0;top:95px;z-index:100;border-radius:5px 0 0 5px;padding-top:17px;display:none;cursor:pointer; } .change img {margin-left:20px;}
+	
+	.left1 {padding:2px;border:1px solid #e8e8e8;background:#fff;}
+	.left1_r {margin-left:16px;line-height:25px;width:215px;padding-top:10px;}
+	.p1 {font-size:14px;color:#333;font-weight:bold;margin-bottom:3px;}
+	.p2 {line-height:20px;font-size:11px;color:#333;} .p3 {height:22px;font-size:11px;color:#c00;}
+	.p4 {height:40px;} .p4 .p4_a {font-size:11px;color:#666;text-align:center;line-height:40px;}
+	.right1 {height:279px;height:226px;position:relative;} .right1:hover .change {display:block;}
+	
+	.ul2 {margin-left:22px;width:220px;} .ul2_b {margin-bottom:2px;}
+	.li5 {height:28px;line-height:28px;border-bottom:1px solid #f1f1f1;text-indent:16px;}
+	.li5 .li5_a {font-size:11px;color:#333;line-height:28px;} .li5_bdel {border-bottom:none;}
+	
+	.con3 {width:970px;margin:0 auto;margin-bottom:64px;}
+	.con3_li {padding:2px;border:1px solid #e8e8e8;background:#fff;position:relative;margin-right:22px;} .con3_mr {margin-right:0;}
+	.con3_li .intro {margin-left:64px;line-height:22px;margin-right:5px;}
+	.con3_li .img {margin-top:4px;} .con3_li .touxiang {position:absolute;left:8px;bottom:45px;box-shadow:3px 0 3px #F30;}
+	.img3 {margin-top:6px;margin-right:5px;}
+	
+	.con4 {width:1069px;height:130px;margin:0 auto;margin-bottom:19px;background:#fff;padding:0 19px;}
+	.con4_a {margin-right:22px;}
+	.con5 {min-width:1007px;height:128px;background:#f2f2f2;border-top:1px solid #dcdcdc;position:relative;}
+	.con5_bg {position:absolute;left:50%;top:-1px;margin-left:-22px;}
+	.con5_p {font-size:23px;color:#666;text-align:center;line-height:128px;}
+	.con5_p a {font-size:23px;color:#690;}
+	
+	.con6, {min-width:1007px;height:135px;background:#fff;padding-top:15px;position:relative;} 
+	.con6_c {width:970px;height:62px;margin:0 auto;text-align:center;position:relative;} .con6_o {height:75px;font-size:11px;color:#c8a899;line-height:22px;}
+	.con6_c a {font-size:14px;color:#666;} .bian {height:10px;margin:0 13px 0 11px;border-left:1px dotted #666;}
+	.con6_c a,bian {line-height:62px;}
+	.f_bg {position:absolute;top:-20px;right:112px;}
+</style>
+</head>
+
+<body>
+	<div class="music">
+    	<div class="head clear">
+        	<h1 class="fl"><a href="#" class="h1_a">音悦台</a></h1>
+            <div class="head_in fl clear">
+            	<a href="#" class="h_a fl">
+                	<span class="h_a_t fl">我的家</span>
+                    <b class="ar fl"></b>
+                </a>
+                <i class="fl b1"></i>
+                <a href="#" class="h_a fl">
+                	<span class="h_a_t fl c_c">首页</span>
+                </a>
+                <a href="#" class="h_a fl">
+                	<span class="h_a_t fl">MV</span>
+                    <b class="ar fl"></b>
+                </a>
+                <a href="#" class="h_a fl">
+                	<span class="h_a_t fl">悦单</span>
+                    <b class="ar fl"></b>
+                </a>
+                <a href="#" class="h_a fl">
+                	<span class="h_a_t fl">V榜</span>
+                    <b class="ar fl"></b>
+                </a>
+                <a href="#" class="h_a fl">
+                	<span class="h_a_t fl">饭团</span>
+                    <b class="ar fl"></b>
+                </a>
+                <a href="#" class="h_a fl">
+                	<span class="h_a_t fl">商城</span>
+                    <b class="ar fl"></b>
+                </a>
+                <a href="#" class="h_a fl">
+                	<span class="h_a_t fl">应用</span>
+                    <b class="ar fl"></b>
+                </a>
+                <a href="#" class="h_a fl">
+                	<span class="h_a_t fl">节目</span>
+                    <b class="ar fl"></b>
+                </a>
+                <a href="#" class="h_a fl">
+                	<span class="h_a_t fl">Fan Club</span>
+                    <b class="ar fl"></b>
+                </a>
+                <a href="#" class="h_a h_a_p fl">
+                	<span class="h_a_t fl">好有趣</span>
+                    <img src="images/h-bg03.png" class="img1" />
+                </a>
+            </div>
+            <img src="images/h-bg04.png" class="img2" />
+            <input type="text" class="in1 fl" placeholder="pitbull《cele" />
+            <div class="fr head_l clear">
+            	<a href="#" class="h_a h_a1 fl">VIP会员登录</a>
+                <a href="#" class="h_a h_a1 fl">登录</a>
+                <i class="fl b1 b2"></i>
+                <a href="#" class="h_a2 fl">注册</a>
+            </div>
+        </div>
+        <div class="con">
+        	<div class="banner">
+            	<span class="b_in f_b_in"></span>
+                <span class="b_in"></span>
+                <span class="b_in"></span>
+                <span class="b_in"></span>
+                <span class="b_in"></span>
+                <span class="b_in"></span>
+                <span class="b_in"></span>
+                <span class="b_in"></span>
+                <span class="b_in l_b_in"></span>
+            </div>
+        </div>
+        <div class="biaoti">
+            <a href="#" class="b_a"></a>
+            <div class="daohang fr">
+            	<a href="#" class="b_a1 fl">全部</a>
+                <i class="t_i fl"></i>
+                <a href="#" class="b_a1 fl">内地</a>
+                <i class="t_i fl"></i>
+                <a href="#" class="b_a1 fl">港台</a>
+                <i class="t_i fl"></i>
+                <a href="#" class="b_a1 fl">欧美</a>
+                <i class="t_i fl"></i>
+                <a href="#" class="b_a1 fl">韩国</a>
+                <i class="t_i fl"></i>
+                <a href="#" class="b_a1 fl">日本</a>
+            </div>
+        </div>
+        <div class="con2 clear">
+        	<div class="fl left">
+            	<a href="#"><img src="images/con2-1.png" />
+                </a>
+            </div>
+            <ul class="fr ul clear">
+            	<li class="fl li">
+                	<a href="#"><img src="images/con2-2.png" />
+                                    	<p class="p8">狂想大凹凸-Nine Muses</p>
+                    </a>
+                </li>
+                <li class="fl li1">
+                	<a href="#"><img src="images/con2-2.png" />
+                    <p class="p8">狂想大凹凸-Nine Muses</p>
+                    </a>
+                    
+                </li>
+                <li class="fl li2">
+                	<a href="#"><img src="images/con2-2.png" />
+                    <p class="p8">狂想大凹凸-Nine Muses</p>
+                    </a>
+                </li>
+                <li class="fl li1 li2">
+                	<a href="#"><img src="images/con2-2.png" />
+                    <p class="p8">狂想大凹凸-Nine Muses</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="biaoti">
+        	<span class="num">45</span>
+            <a href="#" class="b_a b_c"></a>
+            <i class="b3 fl"></i>
+            <span class="txt fl">2014年 第45期 （11.03~11.18）</span>
+            <div class="daohang fr">
+                <a href="#" class="b_a1 fl">内地</a>
+                <i class="t_i fl"></i>
+                <a href="#" class="b_a1 fl">港台</a>
+                <i class="t_i fl"></i>
+                <a href="#" class="b_a1 fl">欧美</a>
+                <i class="t_i fl"></i>
+                <a href="#" class="b_a1 fl">韩国</a>
+                <i class="t_i fl"></i>
+                <a href="#" class="b_a1 fl">日本</a>
+            </div>
+        </div>
+        <div class="con2 clear">
+        	<div class="left1 fl clear">
+            	<a href="#" class="fl"><img src="images/con2-3.png" /></a>
+                <div class="fl left1_r">
+                	<p class="p1">2014音乐V榜第44期-<br/>内地篇</p>
+                    <p class="p2">内地V榜又有重量级金曲内地V榜又有重量级金曲内地V榜又有重量级金曲内地V榜又有重量级金曲
+                    内地V榜又有重量级金曲内地V榜又有重量级金曲内地V榜又有重量级金曲内地V榜又有重量级金曲
+                    内地V榜又有重量级金曲内地V榜又有重量级金曲内地V榜又有重量级金曲内地V榜又有重量级金曲</p>
+                </div>
+            </div>
+            <ul class="right1 fr">
+            	<span class="change"><img src="images/con2-4.png" /></span>
+            	<li class="li">
+                	<span class="diyi">1</span>
+                	<a href="#"><img src="images/con2-2.png" />
+                    <p class="p8">狂想大凹凸-Nine Muses</p>
+                    </a>
+                </li>
+                <li class="li li3">
+                	<span class="diyi dier">2</span>
+                	<a href="#"><img src="images/con2-2.png" />
+                    <p class="p8">狂想大凹凸-Nine Muses</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="biaoti">
+            <a href="#" class="b_a b_d"></a>
+            <div class="daohang fr">
+                
+                <a href="#" class="b_a1 fl">更多&gt;&gt;</a>
+            </div>
+        </div>
+        <div class="con2 clear">
+        	<div class="left1 fl clear">
+            	<a href="#" class="fl"><img src="images/con2-3.png" /></a>
+                <div class="fl left1_r">
+                	<p class="p1">2014音乐V榜第44期-<br/>内地篇</p>
+                    <p class="p2">内地V榜又有重量级金曲内地V榜又有重量级金曲内地V榜又有重量级金曲内地V榜又有重量级金曲
+                    内地V榜又有重量级金曲内地V榜又有重量级金曲内地V榜又有重量级金曲内地V榜又有重量级金曲
+                    内地V榜又有重量级金曲内地V榜又有重量级金曲内地V榜又有重量级金曲内地V榜又有重量级金曲</p>
+                </div>
+            </div>
+            <ul class="right1 fr">
+            	<span class="change"><img src="images/con2-4.png" /></span>
+            	<li class="li">
+                	<span class="diyi">1</span>
+                	<a href="#"><img src="images/con2-2.png" />
+                    <p class="p8">狂想大凹凸-Nine Muses</p>
+                    </a>
+                </li>
+                <li class="li li3">
+                	<span class="diyi dier">2</span>
+                	<a href="#"><img src="images/con2-2.png" />
+                    <p class="p8">狂想大凹凸-Nine Muses</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="biaoti">
+            <a href="#" class="b_a b_e"></a>
+            <div class="daohang fr">
+                
+                <a href="#" class="b_a1 fl">更多&gt;&gt;</a>
+            </div>
+        </div>
+        <div class="con2 clear">
+        	<div class="fl left">
+            	<a href="#"><img src="images/con2-1.png" /></a>
+            </div>
+			<ul class="left1 ul2 fl">
+            	<li>
+                	<a href="#" class="ul2_b"><img src="images/con-1.png" />
+                    <p class="p8">【铃木梨央】&岸优太NTV深夜剧...</p>
+                    </a>
+                </li>
+                <li class="li5">
+                	<a href="#" class="li5_a">【樱井翔】第一弹出演艺人公布</a>
+                </li>
+                <li class="li5">
+                	<a href="#" class="li5_a">【樱井翔】第一弹出演艺人公布</a>
+                </li>
+                <li class="li5">
+                	<a href="#" class="li5_a">【樱井翔】第一弹出演艺人公布</a>
+                </li>
+                <li class="li5">
+                	<a href="#" class="li5_a">【樱井翔】第一弹出演艺人公布</a>
+                </li>
+                <li class="li5 li5_bdel">
+                	<a href="#" class="li5_a">【樱井翔】第一弹出演艺人公布</a>
+                </li>
+            </ul>
+            <ul class="left1 ul2 fl">
+            	<li>
+                	<a href="#" class="ul2_b"><img src="images/con-1.png" />
+                    <p class="p8">【铃木梨央】&岸优太NTV深夜剧...</p
+                    ></a>
+                </li>
+                <li class="li5">
+                	<a href="#" class="li5_a">【樱井翔】第一弹出演艺人公布</a>
+                </li>
+                <li class="li5">
+                	<a href="#" class="li5_a">【樱井翔】第一弹出演艺人公布</a>
+                </li>
+                <li class="li5">
+                	<a href="#" class="li5_a">【樱井翔】第一弹出演艺人公布</a>
+                </li>
+                <li class="li5">
+                	<a href="#" class="li5_a">【樱井翔】第一弹出演艺人公布</a>
+                </li>
+                <li class="li5 li5_bdel">
+                	<a href="#" class="li5_a">【樱井翔】第一弹出演艺人公布</a>
+                </li>
+            </ul>
+        </div>
+        <div class="biaoti">
+            <a href="#" class="b_a b_f"></a>
+            <div class="daohang fr">
+                
+                <a href="#" class="b_a1 fl">更多&gt;&gt;</a>
+            </div>
+        </div>
+        <div class="con3">
+        	<ul class="clear">
+            	<li class="con3_li fl">
+                	<a href="#" class="con3_a">
+            			<img src="images/con3-1.png" />
+            		</a>
+                    <p class="p3 clear">
+                    	<span class="fl intro">流苏的旧时光</span>
+                        <img src="images/con3-2.png" class="fl img" />
+                    </p>
+                   <span class="left1 touxiang"><img src="images/con3-3.png" /></span>
+                    <p class="p4">
+						<a href="#" class="p4_a">在阳光下与你相依</a>
+                    </p>
+                </li>
+            	<li class="con3_li fl">
+                	<a href="#" class="con3_a">
+            			<img src="images/con3-1.png" />
+            		</a>
+                    <p class="p3 clear">
+                    	<span class="fl intro">流苏的旧时光</span>
+                        <img src="images/con3-2.png" class="fl img" />
+                    </p>
+                   <span class="left1 touxiang"><img src="images/con3-3.png" /></span>
+                    <p class="p4">
+						<a href="#" class="p4_a">在阳光下与你相依</a>
+                    </p>
+                </li>
+            	<li class="con3_li fl">
+                	<a href="#" class="con3_a">
+            			<img src="images/con3-1.png" />
+            		</a>
+                    <p class="p3 clear">
+                    	<span class="fl intro">流苏的旧时光</span>
+                        <img src="images/con3-2.png" class="fl img" />
+                    </p>
+                   <span class="left1 touxiang"><img src="images/con3-3.png" /></span>
+                    <p class="p4">
+						<a href="#" class="p4_a">在阳光下与你相依</a>
+                    </p>
+                </li>
+            	<li class="con3_li con3_mr fl">
+                	<a href="#" class="con3_a">
+            			<img src="images/con3-1.png" />
+            		</a>
+                    <p class="p3 clear">
+                    	<span class="fl intro">流苏的旧时光</span>
+                        <img src="images/con3-2.png" class="fl img" />
+                    </p>
+                   <span class="left1 touxiang"><img src="images/con3-3.png" /></span>
+                    <p class="p4">
+						<a href="#" class="p4_a">在阳光下与你相依</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="biaoti b_g_color">
+            <a href="#" class="b_a b_g"></a>
+            <div class="daohang daohang1 fr">
+                
+                <img src="images/con3-4.png" class="fl img3"  /><a href="#" class="b_a1 fl">换一换</a>
+            </div>
+        </div>
+        <div class="con4">
+        	<a href="#" class="left1 con4_a fl"><img src="images/con4-1.png" /></a>
+            <a href="#" class="left1 con4_a fl"><img src="images/con4-1.png" /></a>
+            <a href="#" class="left1 con4_a fl"><img src="images/con4-1.png" /></a>
+            <a href="#" class="left1 con3_mr fl"><img src="images/con4-1.png" /></a>
+        </div>
+    </div>
+    <div class="con5">
+    	<img src="images/con5-1.png" class="con5_bg" />
+        <p class="con5_p">猜得不准？<a href="#">登录</a>后试试看</p>
+    </div>
+    <div class="con6">
+    	<div class="con6_c">
+        	<a href="#">关于音悦台</a><i class="bian"></i>
+            <a href="#">人才招聘</a><i class="bian"></i>
+            <a href="#">联系我们</a><i class="bian"></i>
+            <a href="#">友情链接</a><i class="bian"></i>
+            <a href="#">版权声明</a><i class="bian"></i>
+            <a href="#">客服中心</a>
+        </div>
+        <div class="con6_c con6_o">
+    		Copyright @ 2009-2014 yinyuetai.com 广播电视节目制作经营 许可证编号（京）字第1891号 | 京网文[2011]0074-028号<br />
+            出版物经营许可证
+            <img src="images/f-bg.png" class="f_bg" />
+    	</div>
+    </div>
+</body>
+</html>

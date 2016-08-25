@@ -1,0 +1,1048 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<style>
+body {background:#1e1b24 url(images/con_bg.jpg) no-repeat center 55px;}
+/*head*/
+.head {min-width:1000px;background:url(images/nav_bg.png) top center;height:55px;}
+.head_in {width:1000px;margin:0 auto;height:50px;} h1 {border-right:1px solid #cecece;margin-top:6px;margin-left:14px;}
+h1 a {height:36px;width:99px;display:block;background:url(images/h1-bg.png);text-indent:-9999em;}
+.h_nav {border-right:1px solid #cecece;margin-right:10px;}
+.h_nav1 {margin-right:9px;}
+.li1 {height:31px;border-left:1px solid #cecece;padding-top:19px;position:relative;}
+ .li1 .a6 {height:31px;padding:0 17px 0 29px;display:block;position:relative;z-index:3;}
+ .li3 {height:39px;margin-left:21px;padding-top:11px;} .li3 a {display:block;height:24px;}
+ .li3 a i {width:24px;height:24px;background:url(images/cyou_sprite.png) -139px 0px;margin-right:6px;transition:all 0.5s ease-in-out;} .li3 a:hover i {transform:rotate(360deg) scale(2);}
+ .li3 a .i1 {background-position:-189px 0px;} .li3 a .i2 {background-position:0px -104px;}
+ .li3 a span {line-height:12px;color:#333;margin-top:7px;}
+.li1 .a6 span {color:#4a4a4a;line-height:12px;} 
+.li1 .a6 i {width:0;height:0;border:4px solid transparent;border-top:4px solid #676868;margin-left:6px;margin-top:4px;}
+/*banner*/
+.banner {width:1000px;margin:0 auto;height:551px;background:url(images/header_main.jpg) no-repeat top center;}
+.tab {height:109px;} .tab .logo {width:186px;height:63px;background:url(images/logo.gif) -2px -20px;margin-top:21px;}
+.tab_r {margin-right:3px;}
+.li4 {text-align:center;height:77px;padding-top:32px;width:86px;position:relative;} 
+.li4 .a7 {font-size:15px;color:#c3cff5;font-weight:bold;display:block;line-height:15px;margin-bottom:6px;}
+.li4 p {font:bold 7px '宋体';color:#7b86b3;line-height:7px;}
+/*con01*/
+.con01 {width:1000px;margin:0 auto;}
+.con01_l {width:617px;} .title {height:108px;background:#1d164a;}
+.con01_r {width:383px;background:#322e3f;}
+ .title a {width:214px;height:108px;background:url(images/sprite.jpg) -1px -1px;}
+.title .t2 {width:100px;background-position:-216px -1px;} .title .t3 {width:100px;background-position:-316px -1px;}
+.title .t4 {width:100px;background-position:-416px -1px;} .title .t5 {width:100px;background-position:-516px -1px;}
+
+.tu01 {height:303px;border:1px solid #443b4f;border-top:none;position:relative;}
+.huan {height:14px;width:90px;position:absolute;right:8px;bottom:10px;}
+.huan span {width:14px;height:14px;border-radius:50%;float:left;background:#3a3e47;margin-right:4px;cursor:pointer;}
+.huan .cur {background:#d0290a;}
+
+.title01 {height:59px;padding:7px 0 0 17px;background:url(images/tit01.png);} 
+.new {width:277px;height:49px;background:url(images/sever.png);padding-top:6px;padding-left:84px;}
+.p1 {color:#adb9e0;font-weight:bold;line-height:22px;}
+.p1 a {color:#f00;}
+.gz {border:1px solid #433b4f;}
+.title02 {height:41px;boder-bottom:1px solid #5d616c;background:url(images/gz-bg.png);} .t01 {padding-left:5px;padding-top:14px;}
+.p2 {color:#adb9e0;line-height:14px;margin-right:5px;} .p2 .a1 {color:#f00;text-decoration:underline;margin:0 3px;}
+ .a2 {width:14px;height:14px;margin-top:2px;}
+ .t02 {padding-top:10px;margin-right:13px;} .t02 span {color:#adb9e0;line-height:24px;margin-right:15px;}
+ .t02 i {height:13px;border-left:1px solid #484c55;margin:5px 10px 0;float:left;}
+ .t02 a {float:left;width:27px;height:21px;background:url(images/sprite.jpg) -248px -230px;}
+ .t02 .a3 {background-position:-295px -230px;} .t02 .a4 {background-position:-345px -230px;}
+ 
+ .qiehuan {display:none;}
+ .tab01 {height:59px;} 
+ .tab01 span {width:95px;height:59px;background:url(images/sprite.jpg) 0px -261px;float:left;line-height:59px;color:#fff;text-align:center;font-weight:bold;}
+ .tab01 .on {background-position:-94px -323px;margin-top:3px;height:55px;line-height:53px;}
+ .p3 {width:347px;height:33px;margin:18px auto 5px;background:url(images/sprite.jpg) 0px -379px;text-align:center;}
+ .p3 a {color:#ff4606;font-size:16px;line-height:33px;font-weight:bold;}
+ 
+ .ul1 {margin:0 16px 6px 24px;}.li5 {height:26px;}
+ .li5 a {float:left;color:#9ca7ca;line-height:26px;}
+ .li5 span {float:right;line-height:26px;color:#9ca7ca;} .li5 .a5 {float:right;}
+ .li5 .a5 i {width:13px;height:13px;margin-right:4px;margin-top:3px;}
+ .li5 .a5 span {line-height:18px;}
+ 
+ /*con02*/
+ .con02 {width:1000px;margin:0 auto;background:#1c1a25;padding-top:32px;overflow:hidden;} 
+ .tu02 {margin-left:-8px;margin-bottom:30px;}   .tu02 a {margin-left:8px;border:1px solid #433b4f;}
+ .zhiye {margin-bottom:31px;}
+ .sec {width:656px;border:1px solid #433b4f;overflow:hidden;} 
+ .tab02 {height:58px;margin-right:-4px;border-bottom:1px solid #342e3a;}
+ .tab02 span {width:109px;height:57px;background:url(images/tab02-bg.png);float:left;border-right:1px solid #120f1a;border-bottom:1px solid #120f1a;font-size:14px;line-height:56px;text-align:center;color:#f0ecfd;cursor:pointer;font-weight:bold;}
+ .tab02 .cur1 {background:url(images/tab02-bg2.png);width:108px;border:1px solid #554c67;border-bottom:none;line-height:55px;height:58px;}
+ 
+ .tu03 {position:relative;border:1px solid #433b4f;border-top:none;}
+ .tu03 a,.cau a {display:block;}
+ .hd {width:321px;} .biaoti {height:46px;} .biaoti i {width:36px;height:27px;margin:2px 5px 0 2px;}
+ .biaoti a {font-size:18px;color:#f3ca90;font-weight:bold;line-height:18px;margin-top:7px;}
+ .cau {position:relative;border:1px solid #433b4f;margin-bottom:10px;}
+ .opa {position:absolute;bottom:0;left:0;height:36px;width:100%;background:#000;opacity:0.3;}
+ .txt {position:absolute;bottom:0;left:0;height:36px;width:100%;} 
+ .txt a {color:#fff;line-height:36px;font-weight:bold;margin-left:5px;line-height:12px;margin-top:12px;}
+ .txt p {height:18px;margin-top:10px;margin-right:8px;}
+ .txt p i {width:15px;height:15px;margin-right:5px;}
+ .txt p span {color:#a997c3;line-height:12px;margin-top:2px;}
+ 
+ .li6 {width:319px;height:25px;margin:0 1px 3px;background:url(images/li6-bg.png);}
+ .li6 a {float:left;color:#a6b2d8;line-height:12px;margin-top:6px;margin-left:27px;}
+ .li6 span {width:55px;height:25px;line-height:25px;text-align:center;color:#a6b2d8;}
+ 
+ .info {width:1000px;margin:0 auto;}
+ .info_l {width:215px;} .enter {width:213px;height:188px;margin:0 auto;background:url(images/sprite.jpg) -1px -556px;}
+ .enter p {height:42px;text-align:center;font-size:15px;color:#f3b771;line-height:45px;margin-bottom:16px;}
+ .ul2 {margin:0 10px 0 30px;} .li7 a {color:#9587ab;font-weight:bold;}
+ .li7 {height:28px;background:url(images/li7-bg.png) no-repeat left center;line-height:28px;padding-left:3px;}
+ .xc {margin-top:23px;} .xc a,.co a {display:block;} .co {overflow:hidden;}
+ .co p {width:205px;height:35px;background:url(images/sprite.jpg) -451px -273px;border:5px solid #322b3c;text-align:center;font-size:15px;font-weight:bold;line-height:37px;color:#a295b7;cursor:pointer;} 
+ .co img {transition:all 0.5s ease-in-out;} .co:hover img {transform:translateX(-200px) rotate(1080deg);}
+ 
+ .info_c {margin-left:19px;width:424px;} .biaoti1 {height:41px;} 
+ .biaoti1 i {width:37px;hieght:29px;margin:2px 9px 0 5px;}
+ .biaoti1 a {font-size: 19px;color: #f3ca90;font-weight:bold;line-height:19px;margin-top: 5px;}
+ .txt1 {background:#322b3c;width:423px;border:1px solid #433b4f;border-top:none;border-right:none;margin-bottom:40px;}
+ .tab03 {height:46px;background:#1a191f;border-bottom:1px solid #433b4f;}
+ .tab03 span {border-right:1px solid #433b4f;float:left;width:104px;height:46px;color:#7781b7;line-height:48px;text-align:center;cursor:pointer;border-top:1px solid #433b4f;font-weight:bold;}
+ .tab03 .on1 {background:#322b3c;color:#fff;}
+ .tab03 a {height:13px;margin:16px 0 0 20px;color:#9589a9;line-height:13px;font-size:11px;}
+ 
+ .all {border-right:1px solid #433b4f;padding-top:23px;padding-left:15px;}
+ .li8 {margin-left:14px;background:url(images/li7-bg.png) no-repeat left center;height:22px;line-height:22px;margin-bottom:4px;padding-left:3px;}
+ .ul3 {padding-bottom:25px;}
+ .li8 a {color:#9587ab;font-weight:bold;}
+ 
+ .info_r {width:322px;} .zl {width:320px;border:1px solid #433b4f;background:#26212d;margin-bottom:40px;}
+ .li9 {height:58px;border-bottom:1px dashed #433b4f;margin:0 17px;} .mt {border-bottom:none;margin-bottom:5px;}
+ .s1 {width:76px;height:26px;background:url(images/r-bg01.png);line-height:28px;color:#fff;text-indent:9px;margin-top:16px;margin-right:16px;} .s2 {width:88px;background:url(images/r-bg02.png);margin-right:4px;}
+ .li9 a {line-height:12px;color:#9587ab;margin-top:24px;float:left;}
+ .li9 i {height:15px;border-left:1px solid #835740;margin:23px 3px 0;float:left;}
+ .enter1 {width:279px;height:29px;border:3px solid #4b3f5c;margin:0 auto 17px;padding-top:10px;text-align:center;}
+ .enter1 a {font-size:20px;color:#b1a1ca;line-height:20px;font-weight:bold;}
+ .txt2 {width:321px;} .all1 {padding:23px 0 7px 11px;border-right:1px dashed #433b4f;width:309px;overflow:hidden;}
+ .li10 {margin-right:22px;margin-bottom:23px;} .li10 a {display:block;} .ul4 {margin-right:-9px;}
+ 
+ /*foot*/ 
+ .foot {width:1000px;margin:0 auto;text-align:center;} .foot img {vertical-align:middle;}
+ .foot1 {width:1000px;margin:23px auto 40px;text-align:center;}
+ /*后加的*/
+ /*搜狐全服务*/
+ .ser {width:328px;background:#f2f2f2;position:absolute;top:50px;right:-1px;border:1px solid #bbb;overflow:hidden;display:none;z-index:2;}
+ .my_tit {height:32px;padding-left:22px;border-bottom:1px solid #dbdbdb;} 
+ .my_tit i {width:18px;height:18px;background:url(images/ser01.png);margin-top:7px;}
+ .my_tit a {line-height:12px;font-weight:bold;color:#4a4a4a;margin:11px 0 0 7px;}
+  .ul5 {border-bottom:1px solid #dbdbdb;background:#fff;margin-right:-8px;} .mt1 {border-bottom:none;}
+ .li11 {height:33px;border-right:1px solid #dbdbdb;width:111px;text-indent:15px;} .li11 a {line-height:33px;}
+ /*首页*/
+ .home {width:86px;height:85px;background:url(images/nav_new_hover.jpg);position:absolute;top:0;left:0;padding-top:24px;display:none;}
+ .home a {display:block;line-height:24px;text-align:center;position:relative;color:#e6e2e0;} 
+ .home a i {width:0;height:0;border:3px solid transparent;border-left:3px solid #f3ca90;position:absolute;top:9px;left:13px;display:none;}
+ .home a:hover i {display:block;} .home a:hover {color:#e6e2e0}
+ 
+ .tu01 a {display:block;} .tu01 a img {width:615px;height:303px;}
+ .tu03 a img {width:656px;height:287px;}
+ /*JS用*/
+ /*搜狐全服务*/
+ .active {background:#f2f2f2;} .active .a6 {border-bottom:1px solid #f2f2f2;} .active .ser {display:block;}
+ .active .a6 span {color:#681683;} .active .a6 i {border:4px solid transparent;border-top:4px solid #681683;}
+ /*首页*/
+ .show .home {display:block;}
+ /*小海报*/
+ .tu01 .hide {display:none;}
+ /*新闻公告*/
+ .show {display:block;}
+ /*职业*/
+ .tu03 .hide {display:none;}
+ /*玩家交流*/
+ .yc {display:none;}
+</style>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+window.onload=function(){
+	var oLi=document.getElementById('li1');
+	oLi.onmouseover=function(){
+		this.className='fl li1 active';	
+	};
+	oLi.onmouseout=function(){
+		this.className='fl li1';	
+	};
+	//1
+	var aLi1=document.getElementById('nav').getElementsByTagName('li');
+	var oHome=document.getElementById('home');
+	for(var i=0;i<aLi1.length;i++){
+		aLi1[i].onmouseover=function(){
+			//alert(aLi1.length);
+			if(oHome){
+				this.className='fl li4 show';	
+			}
+		}
+		aLi1[i].onmouseout=function(){
+			//alert(aLi1.length);
+			this.className='fl li4';	
+		}
+	}
+	//2
+	var aSpan=document.getElementById('huan').getElementsByTagName('span');
+	var aA=document.getElementById('tu01').getElementsByTagName('a');
+	for(var i=0;i<aSpan.length;i++){
+		aSpan[i].index=i;
+		aSpan[i].onmouseover=function(){
+			for(var i=0;i<aSpan.length;i++){
+				aSpan[i].className='';	
+				aA[i].className='hide';
+			}
+			this.className='cur';
+			aA[this.index].className='';	
+		}
+	}
+	//3
+	var aSpan1=document.getElementById('tab01').getElementsByTagName('span');
+	var aDiv=document.getElementsByClassName('qiehuan');
+	for(var i=0;i<aSpan1.length;i++){
+		aSpan1[i].index=i;
+		aSpan1[i].onmouseover=function(){
+			//alert(aDiv.length);
+			for(var i=0;i<aSpan1.length;i++){
+				aSpan1[i].className='';	
+				aDiv[i].className='qiehuan';
+			}
+			this.className='on';
+			aDiv[this.index].className='qiehuan show';	
+		}
+	}
+	//4
+	var aSpan2=document.getElementById('tab02').getElementsByTagName('span');
+	var aA2=document.getElementById('tu03').getElementsByTagName('a');
+	for(var i=0;i<aSpan2.length;i++){
+		aSpan2[i].index=i;
+		aSpan2[i].onmouseover=function(){
+			for(var i=0;i<aSpan2.length;i++){
+				aSpan2[i].className='';	
+				aA2[i].className='hide';
+			}
+			this.className='cur1';
+			aA2[this.index].className='';	
+		}
+	}
+	//5
+	var aB=document.getElementById('tab03');
+	var OK=document.getElementById('txt1');
+	var aB1=document.getElementById('tab04');
+	var OK1=document.getElementById('txt2');
+	var aB2=document.getElementById('tab05');
+	var OK2=document.getElementById('txt3');
+	com(aB,OK);
+	com(aB1,OK1);
+	com1(aB2,OK2);
+	function com(haha,hehe){
+		var aBtn=haha.getElementsByTagName('span');
+		var aH=hehe.getElementsByClassName('all');
+		for(var i=0;i<aBtn.length;i++){
+			aBtn[i].index=i;
+			aBtn[i].onmouseover=function(){
+				//alert(aH.length);	
+				for(var i=0;i<aBtn.length;i++){
+					aBtn[i].className='';
+					aH[i].className='yc all';	
+				}
+				this.className='on1';
+				aH[this.index].className='all';
+			}
+		}	
+	}
+	
+	function com1(haha,hehe){
+		var aBtn=haha.getElementsByTagName('span');
+		var aH=hehe.getElementsByClassName('all1');
+		for(var i=0;i<aBtn.length;i++){
+			aBtn[i].index=i;
+			aBtn[i].onmouseover=function(){
+				//alert(aH.length);	
+				for(var i=0;i<aBtn.length;i++){
+					aBtn[i].className='';
+					aH[i].className='yc all1';	
+				}
+				this.className='on1';
+				aH[this.index].className='all1';
+			}
+		}	
+	}
+	
+};
+</script>
+</head>
+
+<body>
+	
+<!--head-->
+<div class="head">
+    	<div class="head_in clear">
+        	<h1 class="fl">
+            	<a href="#">灵魂回想</a>
+            </h1>
+            <div class="fr h_nav">
+            	<ul class="clear">
+                	<li class="fl li1">
+                    	<a href="#" class="clear a6">
+                            <span class="fl">客服</span>
+                            <i class="fl"></i>
+                        </a>
+                    </li>
+                    <li class="fl li1" id="li1">
+                    	<a href="#" class="clear a6">
+                            <span class="fl">畅游全服务</span>
+                            <i class="fl"></i>
+                        </a>
+                        <div class="ser">
+    						<div class="my_tit clear">
+        						<i class="fl"></i>
+            					<a href="#" class="fl">我的通行证</a>
+        					</div>
+       					    <ul class="clear ul5">
+                                <li class="fl li11"><a href="#">修改密码</a></li>
+                                <li class="fl li11"><a href="#">实名认证</a></li>
+                                <li class="fl li11"><a href="#">认证手机</a></li>
+        					</ul>
+        					<div class="my_tit clear">
+        	<i class="fl"></i>
+            <a href="#" class="fl">安全中心</a>
+        </div>
+                            <ul class="clear ul5">
+                                <li class="fl li11"><a href="#">修改密码</a></li>
+                                <li class="fl li11"><a href="#">实名认证</a></li>
+                                <li class="fl li11"><a href="#">认证手机</a></li>
+        					</ul>
+        					<div class="my_tit clear">
+        	<i class="fl"></i>
+            <a href="#" class="fl">充值中心</a>
+        </div>
+                            <ul class="clear ul5">
+                                <li class="fl li11"><a href="#">修改密码</a></li>
+                                <li class="fl li11"><a href="#">实名认证</a></li>
+                                <li class="fl li11"><a href="#">认证手机</a></li>
+        					</ul>
+        					<div class="my_tit clear">
+        	<i class="fl"></i>
+            <a href="#" class="fl">客服中心</a>
+        </div>
+          				    <ul class="clear ul5 mt1">
+                                <li class="fl li11"><a href="#">修改密码</a></li>
+                                <li class="fl li11"><a href="#">实名认证</a></li>
+                                <li class="fl li11"><a href="#">认证手机</a></li>
+        					</ul>
+    					</div>
+                    </li>
+                    <li class="fl li1">
+                    	<a href="#" class="a6 clear">
+                            <span class="fl">畅游全游戏</span>
+                            <i class="fl"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr h_nav1">
+            	<ul class="clear">
+                	<li class="fl li3">
+                    	<a href="#" class="clear">
+                        	<i class="fl"></i>
+                            <span class="fl">注册</span>
+                        </a>
+                    </li>
+                    <li class="fl li3">
+                    	<a href="#" class="clear">
+                        	<i class="fl i1"></i>
+                            <span class="fl">充值</span>
+                        </a>
+                    </li>
+                    <li class="fl li3">
+                    	<a href="#" class="clear">
+                        	<i class="fl i2"></i>
+                            <span class="fl">畅游+</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--banner-->
+<div class="banner">
+    	<div class="tab">
+        	<a href="#" class="fl logo"></a>
+            <div class="fr tab_r">
+            	<ul class="clear" id="nav">
+                	<li class="li4 fl">
+                    	<a href="#" class="a7">首页</a>
+                        <P>HOME</P>
+                    </li>
+                    <li class="li4 fl">
+                    	<a href="#" class="a7">新闻公告</a>
+                        <P>NEWS</P>
+                        <div class="home" id="home">
+                        	<a href="#"><i></i>游戏新闻</a>
+                            <a href="#"><i></i>官方公告</a>
+                        </div>
+                    </li>
+                    <li class="li4 fl">
+                    	<a href="#" class="a7">游戏特色</a>
+                        <P>FEATURES</P>
+                    </li>
+                    <li class="li4 fl">
+                    	<a href="#" class="a7">新手指南</a>
+                        <P>NEWBIE</P>
+                        <div class="home" id="home">
+                        	<a href="#"><i></i>游戏新闻</a>
+                            <a href="#"><i></i>官方公告</a>
+                        </div>
+                    </li>
+                    <li class="li4 fl">
+                    	<a href="#" class="a7">游戏下载</a>
+                        <P>DOWNLOAD</P>
+                    </li>
+                    <li class="li4 fl">
+                    	<a href="#" class="a7">活动专区</a>
+                        <P>ACTIVITY</P>
+                        <div class="home" id="home">
+                        	<a href="#"><i></i>游戏新闻</a>
+                            <a href="#"><i></i>官方公告</a>
+                        </div>
+                    </li>
+                    <li class="li4 fl">
+                    	<a href="#" class="a7">视觉欣赏</a>
+                        <P>VIDEO&PICTURE</P>
+                    </li>
+                    <li class="li4 fl">
+                    	<a href="#" class="a7">玩家互动</a>
+                        <P>INTERACTION</P>
+                        <div class="home" id="home">
+                        	<a href="#"><i></i>游戏新闻</a>
+                            <a href="#"><i></i>官方公告</a>
+                        </div>
+                    </li>
+                    <li class="li4 fl">
+                    	<a href="#" class="a7">客户服务</a>
+                        <P>SERVICE</P>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--con01-->
+<div class="con01 clear">
+    	<div class="con01_l fl">
+        	<div class="title clear">
+            	<a href="#" class="fl"></a>
+                <a href="#" class="fl t2"></a>
+               	<a href="#" class="fl t3"></a>
+                <a href="#" class="fl t4"></a>
+                <a href="#" class="fl t5"></a>
+            </div>
+            <div class="tu01" id="tu01">
+            	<a href="#"><img src="images/main_a1 (1).jpg" /></a>
+                <a href="#" class="hide"><img src="images/01.png" /></a>
+                <a href="#" class="hide"><img src="images/02.png" /></a>
+                <a href="#" class="hide"><img src="images/03.png" /></a>
+                <a href="#" class="hide"><img src="images/04.png" /></a>
+            	<div class="huan" id="huan">
+                	<span class="cur"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="con01_r fl">
+        	<div class="title01">
+            	<div class="new">
+                	<p class="p1">电信一区<a href="#">【元素殿堂】</a>欢迎进驻！</p>
+                    <p class="p1">网通一区<a href="#">【雷霆之怒】</a>欢迎进驻！</p>
+                </div>
+            </div>
+            <div class="gz">
+            	<div class="title02 clear">
+                	<div class="fl t01 clear">
+                    	<p class="fl p2">距您上次访问有<a href="#" class="a1">200</a>条更新</p>
+                        <a href="#" class="fl a2"><img src="images/a2.png" /></a>
+                    </div>
+                    <div class="fr t02 clear">
+                    	<span class="fl">关注：</span>
+                        <a href="#"></a>
+                        <i></i>
+                        <a href="#" class="a3"></a>
+                        <i></i>
+                        <a href="#" class="a4"></a>
+                    </div>
+                </div>
+                <div class="tab01" id="tab01">
+                	<span class="on">综合</span>
+                    <span>新闻</span>
+                    <span>公告</span>
+                    <span>媒体</span>
+                </div>
+                <div class="qiehuan show">
+                	<p class="p3">
+                	<a href="#">4月8日大版开启 新职业术士魔神天降</a>
+                </p>
+               	    <ul class="ul1">
+                	<li class="li5 clear">
+                    	<a href="#">【新闻】 两大满级副本特色揭秘 终极BOSS曝光</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">我看着颗猕猴桃</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">眼泪突然被引爆</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">我可不是可不是特别爱闹</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">这叫做叫做心灵感召</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">不信你问李清照</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#" class="a5">
+                        	<i class="fl"><img src="images/a5-i.png" /></i>
+                            <span class="fl">更多信息&gt;</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="qiehuan">
+                	<p class="p3">
+                	<a href="#">4月8日大版开启 新职业术士魔神天降</a>
+                </p>
+               	    <ul class="ul1">
+                	<li class="li5 clear">
+                    	<a href="#">我天生不爱炫耀</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">却太多艺术细胞</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">我谈的情拍的拖也许很少</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">中的枪挨的刀受的煎熬</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">华丽得无法低调</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">【新闻】 两大满级副本特色揭秘 终极BOSS曝光</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#" class="a5">
+                        	<i class="fl"><img src="images/a5-i.png" /></i>
+                            <span class="fl">更多信息&gt;</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="qiehuan">
+                	<p class="p3">
+                	<a href="#">4月8日大版开启 新职业术士魔神天降</a>
+                </p>
+               	    <ul class="ul1">
+                	<li class="li5 clear">
+                    	<a href="#">【新闻】 竞技场上线！进入PVP激斗时代</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">过去我确实不怎么样</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">现在也没有多好多强</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">有时为了生活性格变差变坏变混蛋</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">有时也想找个伴分摊</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">唱情歌落俗说爱又太苦</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#" class="a5">
+                        	<i class="fl"><img src="images/a5-i.png" /></i>
+                            <span class="fl">更多信息&gt;</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="qiehuan">
+                	<p class="p3">
+                	<a href="#">4月8日大版开启 新职业术士魔神天降</a>
+                </p>
+               	    <ul class="ul1">
+                	<li class="li5 clear">
+                    	<a href="#">【新闻】 天降魔神！新职业术士多图曝光</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">想表达态度又搞得你要退出</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">创造好幸福原来是一个人孤独</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">现在醒悟现在这样哭</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">你的背包对我的沉重的审判</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#">男人歌唱给谁来听 下一首有没有你心情</a>
+                        <span>03/24</span>
+                    </li>
+                    <li class="li5 clear">
+                    	<a href="#" class="a5">
+                        	<i class="fl"><img src="images/a5-i.png" /></i>
+                            <span class="fl">更多信息&gt;</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--con02-->
+<div class="con02">
+    	<div class="clear tu02">
+        	<a href="#" class="fl"><img src="images/main_a2.jpg" /></a>
+            <a href="#" class="fl"><img src="images/main_a22.jpg" /></a>
+            <a href="#" class="fl"><img src="images/main_a2 (1).jpg" /></a>
+            <a href="#" class="fl"><img src="images/main_a23.png" /></a>
+        </div>
+        <div class="zhiye clear">
+        	<div class="sec fl">
+            	<div class="tab02 clear" id="tab02">
+                	<span class="cur1">术士</span>
+                    <span>神射手</span>
+                    <span>守护者</span>
+                    <span>魔法师</span>
+                    <span>战士</span>
+                    <span>刺客</span>
+                </div>
+                <div class="tu03" id="tu03">
+                	<a href="#" ><img src="images/shenshe.jpg" /></a>
+                    <a href="#" class="hide"><img src="images/con01.png" /></a>
+                    <a href="#" class="hide"><img src="images/con02.png" /></a>
+                    <a href="#" class="hide"><img src="images/con03.png" /></a>
+                    <a href="#" class="hide"><img src="images/con04.png" /></a>
+                    <a href="#" class="hide"><img src="images/zy01.png" /></a>
+                </div>
+            </div>
+            <div class="fr hd">
+            	<div class="biaoti clear">
+                	<i class="fl"><img src="images/biaoti01.png" /></i>
+                    <a href="#" class="fl">活动中心</a>
+                </div>
+                <div class="cau">
+                	<a href="#"><img src="images/1.jpg" /></a>
+                    <div class="opa"></div>
+                    <div class="txt clear">
+                    	<a href="#" class="fl">女武神的秘密</a>
+                        <p class="fr clear">
+                        	<i class="fl"><img src="images/smile.png" /></i>
+                            <span class="fl">共7,294,712人关注</span>
+                        </p>
+                    </div>
+                </div>
+                <ul>
+                	<li class="li6 clear">
+                    	<a href="#">神谕者的成长礼</a>
+                        <span class="fr">进行中</span>
+                    </li>
+                    <li class="li6 clear">
+                    	<a href="#">神谕者的成长礼</a>
+                        <span class="fr">进行中</span>
+                    </li>
+                    <li class="li6 clear">
+                    	<a href="#">神谕者的成长礼</a>
+                        <span class="fr">进行中</span>
+                    </li>
+                    <li class="li6 clear">
+                    	<a href="#">神谕者的成长礼</a>
+                        <span class="fr">进行中</span>
+                    </li>
+                    <li class="li6 clear">
+                    	<a href="#">神谕者的成长礼</a>
+                        <span class="fr">进行中</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="info clear">
+        	<div class="fl info_l">
+            	<div class="enter">
+                	<p>快捷入门</p>
+                    <div class="clear">
+                    	<ul class="ul2 fl">
+                        	<li class="li7"><a href="#">账号管理</a></li>
+                            <li class="li7"><a href="#">账号安全</a></li>
+                            <li class="li7"><a href="#">BUG提交</a></li>
+                            <li class="li7"><a href="#">玩家社区</a></li>
+                        </ul>
+                        <ul class="ul2 fl">
+                        	<li class="li7"><a href="#">兑换中心</a></li>
+                            <li class="li7"><a href="#">畅游知道</a></li>
+                            <li class="li7"><a href="#">客户端FAQ</a></li>
+                            <li class="li7"><a href="#">加速器下载</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="xc">
+                    	<a href="#"><img src="images/enter01.png" /></a>
+                </div>
+                <div class="co">
+                	<p>媒体合作专区</p>
+                    <a href="#"><img src="images/examen.jpg" /></a>
+                </div>
+            </div>
+            <div class="fl info_c">
+            	<div class="biaoti1 clear">
+                	<i class="fl"><img src="images/bt1-1.png" /></i>
+                    <a href="#" class="fl">玩家交流</a>
+                </div>
+                <div class="txt1" id="txt1">
+                	<div class="tab03 clear" id="tab03">
+                    	<span class="on1">玩家攻略</span>
+                        <span>论坛热帖</span>
+                        <span>社区精华</span>
+                        <a href="#" class="fl">
+                        	<img src="images/tab03-1.png" />
+                            更多信息 &gt;
+                        </a>
+                    </div>
+                    <div class="all">
+                    	<div class="clear">
+                    		<a href="#" class="fl"><img src="images/all-1.png" /></a>
+                        	<ul class="fl ul3">
+                        	<li class="li8">
+                            	<a href="#">生活节能之烹饪技能详细解读</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">二三十岁的人傍晚黄昏还等对的人</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">醉得好坏不分哭得大声记录着青春</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">二三十岁的人奋不顾身微笑着成人</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">作曲家写一首我们一生最平凡的歌</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">作曲家告诉你爱的人你多真多深刻</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">作曲家我还是你多年未见的老友啊</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">而你还是不太明白孤独是个节拍</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="all yc">
+                    	<div class="clear">
+                    		<a href="#" class="fl"><img src="images/all-1.png" /></a>
+                        	<ul class="fl ul3">
+                        	<li class="li8">
+                            	<a href="#">穿华丽的服装</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">为原始的渴望而站着</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">用完美的表情</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">为脆弱的城市而撑着</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">我冷漠的接受</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">你焦急的等待也困着</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">想无数生存在橱窗里的模特</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">至少证明我们还活着</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="all yc">
+                    	<div class="clear">
+                    		<a href="#" class="fl"><img src="images/all-1.png" /></a>
+                        	<ul class="fl ul3">
+                        	<li class="li8">
+                            	<a href="#">除了光以外,我还能看见什么</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">除了风以外,我还能听到什么</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">除了你以外还能倚赖哪一个</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">在千里以外在呼喊的是什么</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">在百年以后还能回忆什么</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">在离开以前能否再见那一刻</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">记得你的眼睛将会亮着</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">我的手臂将会挥着</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="biaoti1 clear">
+                	<i class="fl"><img src="images/bt1-1.png" /></i>
+                    <a href="#" class="fl">媒体专区</a>
+                </div>
+                <div class="txt1" id="txt2">
+                	<div class="tab03 clear" id="tab04">
+                    	<span class="on1">17173</span>
+                        <span>新浪爱问</span>
+                        <span>太平洋游戏</span>
+                        <a href="#" class="fl">
+                        	<img src="images/tab03-1.png" />
+                            更多信息 &gt;
+                        </a>
+                    </div>
+                    <div class="all">
+                    	<div class="clear">
+                    		<a href="#" class="fl"><img src="images/all-1.png" /></a>
+                        	<ul class="fl ul3">
+                        	<li class="li8">
+                            	<a href="#">谁说世界早已没有选择</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">趁着我会喜怒你会哀乐</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">唱几分钟情歌</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">没什么至少证明我们还活着</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">再过一下天空就要变成红色</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">看着太阳一点点还剩下半个</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">那种感觉还在不在</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">怎么会颠倒了黑白</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="all yc">
+                    	<div class="clear">
+                    		<a href="#" class="fl"><img src="images/all-1.png" /></a>
+                        	<ul class="fl ul3">
+                        	<li class="li8">
+                            	<a href="#">面向左边你看不到</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">喝啤酒不是因为争吵了过后</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">只是记忆空了一块</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">你怎么还不来独白</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">我以为你能把这变精彩</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">你不要说话太坦白</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">搞得我心里好悲哀</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">再不怎么样好歹也是一场爱</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="all yc">
+                    	<div class="clear">
+                    		<a href="#" class="fl"><img src="images/all-1.png" /></a>
+                        	<ul class="fl ul3">
+                        	<li class="li8">
+                            	<a href="#">你不要说话太坦白</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">没有谁真的离不开</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">现在我就要把自己找回来</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">大部分人让我学习去看</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">世俗的眼光,我认真学习了世俗眼光</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">世俗到天亮</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">为什么全世界的恋我都失一遍</a>
+                            </li>
+                            <li class="li8">
+                            	<a href="#">为所有的悲剧当特约演员</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fr info_r">
+            	<div class="biaoti1 clear">
+                	<i class="fl"><img src="images/bt1-1.png" /></i>
+                    <a href="#" class="fl">游戏资料</a>
+                </div>
+                <div class="zl">
+                	<ul>
+                    	<li class="li9 clear">
+                        	<span class="fl s1">新手入门</span>
+                            <a href="#">注册账号</a>
+                            <i></i>
+                            <a href="#">下载游戏</a>
+                            <i></i>
+                            <a href="#">登陆游戏</a>
+                        </li>
+                        <li class="li9 clear">
+                        	<span class="fl s1">职业介绍</span>
+                            <a href="#">刺客</a>
+                            <i></i>
+                            <a href="#">神射手</a>
+                            <i></i>
+                            <a href="#">守护者</a>
+                            <i></i>
+                            <a href="#">魔法师</a>
+                        </li>
+                        <li class="li9 clear">
+                        	<span class="fl s1 s2">旅行者日记</span>
+                            <a href="#">雷班斯</a>
+                            <i></i>
+                            <a href="#">弗尔图斯</a>
+                            <i></i>
+                            <a href="#">赫利亚那</a>
+                        </li>
+                        <li class="li9 mt clear">
+                        	<span class="fl s1 s2">神谕者指引</span>
+                            <a href="#">1级-19级</a>
+                            <i></i>
+                            <a href="#">20级-39级</a>
+                            <i></i>
+                            <a href="#">40级-49级</a>
+                        </li>
+                    </ul>
+                    <div class="enter1">
+                    	<a href="#">进入资料站</a>
+                    </div>
+                </div>
+                <div class="biaoti1 clear">
+                	<i class="fl"><img src="images/bt1-1.png" /></i>
+                    <a href="#" class="fl">视觉欣赏</a>
+                </div>
+                <div class="txt1 txt2" id="txt3">
+                	<div class="tab03 clear" id="tab05">
+                    	<span class="on1">玩家攻略</span>
+                        <span>论坛热帖</span>
+                        <a href="#" class="fl">
+                        	<img src="images/tab03-1.png" />
+                            更多信息 &gt;
+                        </a>
+                    </div>
+                   <div class="all1">
+                   		<ul class="clear ul4">
+                        	<li class="fl li10"><a href="#"><img src="images/last01.png" /></a></li>
+                            <li class="fl li10"><a href="#"><img src="images/last01.png" /></a></li>
+                        </ul>
+                        <ul class="clear ul4">
+                        	<li class="fl li10"><a href="#"><img src="images/last01.png" /></a></li>
+                            <li class="fl li10"><a href="#"><img src="images/last01.png" /></a></li>
+                        </ul>
+                   </div>
+                   <div class="all1 yc">
+                   		<ul class="clear ul4">
+                        	<li class="fl li10"><a href="#"><img src="images/last01.png" /></a></li>
+                            
+                        </ul>
+                        <ul class="clear ul4">
+                        	<li class="fl li10"><a href="#"><img src="images/last01.png" /></a></li>
+                            
+                        </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--foot-->
+<div class="foot">
+	<img src="images/fo01.png" />
+    <img src="images/fo02.png" />
+    &nbsp;&nbsp;<img src="images/fo03.png" />&nbsp;&nbsp;
+     <img src="images/fo02.png" />
+     <img src="images/fo01.png" />
+</div>
+<div class="foot1">
+	<img src="images/fo04.png" />
+</div>
+<div class="foot">
+	<img src="images/foot02.png" />
+</div>
+<div class="foot">
+	<img src="images/foot03.png" />
+</div>
+</body>
+</html>

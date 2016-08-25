@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+.life {width:1210px;margin:0 auto;overflow:hidden;}
+.l_tit {height:44px;} .l_tit a {font-weight:bold;font-size:23px;color:#666;line-height:23px;margin-top:11px;}
+.l_tit span {font-size:13px;font-weight:bold;color:#666;line-height:13px;margin:19px 0 0 10px;}
+
+.l_li {margin-right:10px;} .l_ul {margin-right:-10px;}
+.l_div {width:295px;height:190px;position:relative;margin-bottom:10px;overflow:hidden;} .l_div .a2 {display:block;} 
+.l_div .a2 img {width:311px;height:190px;transition:all 0.2s ease-in-out;} .a2:hover img {transform:translate(-16px,0);}
+.d_ms {position:absolute;left:0;top:0;width:120px;height:190px;}
+.opa {width:100%;height:100%;background:#F66;opacity:0.3;}
+.d_txt {position:absolute;top:0;left:0;width:100px;height:164px;padding:26px 0 0 20px;}
+.d_txt .d_p {font-size:18px;color:#333;font-weight:bold;line-height:28px;}
+.d_txt .d_p1 {color:#666;font-weight:bold;line-height:22px;}
+.d_txt .d_p2 {font-size:11px;color:#ea6365;line-height:15px;margin-bottom:25px;}
+.d_txt .d_p3 {height:16px;font-size:11px;color:#888;padding-left:6px;background:url(../images/d_p3-bg.png) no-repeat left 5px;margin-bottom:2px;}
+.d_txt .d_p3 a {font-size:11px;color:#888;line-height:11px;}
+.d_txt .d_p4 {height:18px;} 
+.d_txt .d_p4 .a3 {padding:0 2px;height:18px;line-height:18px;background:#e4393c;text-align:center;color:#fff;margin-top:1px;}
+.d_txt .d_p5 {height:34px;margin-top:21px;} .d_txt .d_p5 span {color:#999;line-height:12px;margin:14px 7px 0 0;}
+.d_txt .d_p5 b {color:#e4393c;font-size:18px;line-height:18px;margin-top:8px;}
+.d_txt .d_p6 {height:32px;}
+.d_txt .d_p6 a {width:72px;height:32px;background:url(../images/cantuan.png);line-height:32px;color:#fff;font-size:18px;text-indent:11px;}
+
+.l_li1 {width:247px;height:67px;background:#f7faff;padding:3px 79px 0 70px;margin-right:10px;} .l_ul1 {margin-right:-8px;}
+.li1_ys {background:#fff;}
+.li1_txt {padding-top:18px;} 
+.li1_txt .l_p {color:#989898;font-size:15px;font-weight:bold;line-height:15px;margin-bottom:4px;}
+.li1_txt .l_p1 {color:#ce0500;font-size:13px;font-weight:bold;line-height:13px;} .li1_txt .p_ys {color:#5f84b9;}
+
+

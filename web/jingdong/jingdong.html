@@ -1,0 +1,1801 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>京东</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/header.css" /> 
+<link rel="stylesheet" href="css/logo-ser.css" />
+<link rel="stylesheet" href="css/all-goods.css" />
+<link rel="stylesheet" href="css/life.css" />
+<link rel="stylesheet" href="css/content.css" />
+<link rel="stylesheet" href="css/hot.css" />
+<style>
+/*js用*/
+.a_tu .hide,.f_tab .hide {display:none;}
+</style>
+<script>
+window.onload=function(){
+	function tab(arr1,arr2){
+		for(var i=0;i<arr1.length;i++){
+			arr1[i].index=i;
+			arr1[i].onmouseover=function(){
+				//alert(arr2.length);
+				for(var i=0;i<arr1.length;i++){
+					arr1[i].className='';
+					arr2[i].className='hide';
+				}
+				this.className='on';
+				arr2[this.index].className='';
+			}
+		}
+	}
+	var aTu=document.getElementById('a_tu').getElementsByTagName('a');
+	var aSpan=document.getElementById('a_tab').getElementsByTagName('span');
+	tab(aSpan,aTu);
+	
+	var aSpan1=document.getElementById('tab1').getElementsByTagName('span');
+	var aTu1=document.getElementById('f_tab1').getElementsByTagName('a');
+	tab(aSpan1,aTu1);
+	
+	var aSpan2=document.getElementById('s_tab1').getElementsByTagName('span');
+	var aTu2=document.getElementById('f_s1').getElementsByTagName('a');
+	tab(aSpan2,aTu2);
+}
+</script>
+</head>
+
+<body>
+<!--头部-->
+<div class="header">
+	<div class="header_in clear">
+    	<div class="fl head_l clear">
+        	<p class="fl p_mr clear">
+            	<i class="fl"></i>
+                <a href="#" class="fl">收藏京东</a>
+            </p>
+            <p class="fl p_mr1 clear">
+            	<i class="fl i1"></i>
+                <a href="#" class="fl">关注京东</a>
+            </p>
+            <p class="fl clear">
+            	<i class="fl i2"></i>
+                <span class="fl">北京</span>
+                <a href="#" class="fl">[更换]</a>
+            </p>
+        </div>
+        <ul class="head_r fr clear">
+        	<li class="fl clear">
+            	<b class="fl"></b>
+                <a href="#" class="fl">手机京东</a>
+                <em class="fl"></em>
+                <i class="fl"></i>
+            </li>
+            <li class="fl clear">
+                <a href="#" class="fl">客户服务</a>
+                <em class="fl"></em>
+                <i class="fl"></i>
+            </li>
+            <li class="fl clear">
+                <a href="#" class="fl">网站导航</a>
+                <em class="fl"></em>
+            </li>
+        </ul>
+        <div class="head_c fr clear">
+        	<p class="fl clear">
+            	<a href="#" class="fl a1">您好,请登录</a>
+            </p>
+            <p class="fl clear">
+            	<a href="#" class="fl">免费注册</a>
+                <i class="fl c_i1"></i>
+            </p>
+            <p class="fl clear">
+            	<a href="#" class="fl">我的订单</a>
+                <i class="fl"></i>
+            </p>
+            <p class="fl clear">
+            	<em class="fl"></em>
+            	<a href="#" class="fl">会员俱乐部</a>
+                <i class="fl"></i>
+            </p>
+            <p class="fl clear">
+            	<em class="fl em1"></em>
+            	<a href="#" class="fl">企业频道</a>
+                <i class="fl"></i>
+            </p>
+        </div>
+    </div>
+</div>
+<!--logo,搜索栏-->
+<div class="ls clear">
+	<h1 class="fl">
+    	<a href="#">京东</a>
+    </h1>
+    <div class="erwei fr clear">
+    	<a href="#" class="fl"></a>
+        <div class="fl erwei_d">
+        	<p>客户端</p>
+            <p>首次下单</p>
+            <p class="e_p"></p>
+        </div>
+        <img src="images/close.png" class="close" />
+    </div>
+    <div class="jd_js fr clear">
+    	<div class="l01 fl">
+        	<a href="#" class="my_jd clear">
+            	<em class="fl"></em>
+            	<span class="fl">我的京东</span>
+                <i class="fl"></i>
+            </a>
+        </div>
+        <div class="r01 fr">
+        	<a href="#" class="my_car">
+            	<em class="fl"></em>
+            	<span class="fl s1">去购物车结算</span>
+                <i class="fl"></i>
+                <span class="count">168</span>
+            </a>
+        </div>
+    </div>
+    <div class="search fr">
+    	<div class="clear">
+        	<input type="text" placeholder="流量充值" class="fl" />
+            <a href="#" class="sousuo fl">搜索</a>
+        </div>
+        <div class="remen clear">
+        	<span class="fl">热门搜索:</span>
+            <a href="#" class="fl yanse">上新满减</a>
+            <a href="#" class="fl">潮流换新</a>
+            <a href="#" class="fl">4K电视</a>
+            <a href="#" class="fl">母婴节</a>
+            <a href="#" class="fl">美翻了</a>
+            <a href="#" class="fl">手机特惠</a>
+            <a href="#" class="fl">程序猿</a>
+            <a href="#" class="fl">领100</a>
+        </div>
+    </div>
+</div>
+<!--全部商品分类-->
+<div class="all clear">
+	<div class="zuo fl">
+    	<h2>全部商品分类</h2>
+        <div class="fenlei">
+        	<p>
+            	<a href="#">图书</a>、<a href="#">音像</a>、<a href="#">数字商品</a>
+                <i></i>
+            </p>
+            <p>
+            	<a href="#">家用电器</a>
+                <i></i>
+            </p>
+            <p>
+            	<a href="#">手机</a>、<a href="#">数码</a>、<a href="#">京东通信</a>
+                <i></i>
+            </p>
+            <p>
+            	<a href="#">电脑</a>、<a href="#">办公</a>
+                <i></i>
+            </p>
+            <p>
+            	<a href="#">家居</a>、<a href="#">家具</a>、<a href="#">家装</a>、<a href="#">厨具</a>
+                <i></i>
+            </p>
+            <p>
+            	<a href="#">男装</a>、<a href="#">女装</a>、<a href="#">内衣</a>、<a href="#">珠宝</a>
+                <i></i>
+            </p>
+            <p>
+            	<a href="#">个护化妆</a>
+                <i></i>
+            </p>
+            <p>
+            	<a href="#">鞋靴</a>、<a href="#">箱包</a>、<a href="#">钟表</a>、<a href="#">奢侈品</a>
+                <i></i>
+            </p>
+            <p>
+            	<a href="#">运动户外</a>
+                <i></i>
+            </p>
+            <p>
+            	<a href="#">汽车</a>、<a href="#">整车用品</a>
+                <i></i>
+            </p>
+            <p>
+            	<a href="#">母婴</a>、<a href="#">玩具乐器</a>
+                <i></i>
+            </p>
+            <p>
+            	<a href="#">食品饮料</a>、<a href="#">酒类</a>、<a href="#">生鲜</a>
+                <i></i>
+            </p>
+            <p>
+            	<a href="#">营养保健</a>
+                <i></i>
+            </p>
+            <p class="xc">
+            	<a href="#">彩票</a>、<a href="#">旅行</a>、<a href="#">充值</a>、<a href="#">票务</a>
+                <i></i>
+            </p>
+        </div>
+    </div>
+    <div class="you fl">
+    	<div class="a_nav clear">
+        	<a href="#" class="fl on">首页</a>
+            <a href="#" class="fl">服装城</a>
+            <a href="#" class="fl">食品</a>
+            <a href="#" class="fl">团购</a>
+            <a href="#" class="fl">夺宝岛</a>
+            <a href="#" class="fl">闪购</a>
+            <a href="#" class="fl">金融</a>
+            <a href="#" class="nr_jie"><img src="images/nr_jie.png" /></a>
+            <a href="#" class="fr bige"><img src="images/bige.png" /></a>
+        </div>
+        <div class="clear">
+        	<div class="a_ml fl">
+        		<div class="a_tu" id="a_tu">
+            		<a href="#"><img src="images/01.jpg" /></a>
+                    <a href="#" class="hide"><img src="images/02.jpg" /></a>
+                    <a href="#" class="hide"><img src="images/03.jpg" /></a>
+                    <a href="#" class="hide"><img src="images/03.jpg" /></a>
+                    <a href="#" class="hide"><img src="images/02.jpg" /></a>
+                    <a href="#" class="hide"><img src="images/01.jpg" /></a>
+                	<div class="a_tab clear" id="a_tab">
+                	<span class="on">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                </div>
+            	</div>
+                <div class="a_tu1">
+                	<ul>
+                    	<li class="clear">
+                        	<a href="#" class="fl"><img src="images/a_tu01.png" /></a>
+                            <a href="#" class="fl"><img src="images/a_tu02.png" /></a>
+                            <a href="#" class="fl"><img src="images/a_tu03.png" /></a>
+                        </li>
+                    </ul>
+                    <span class="a_s1"><b></b></span>
+                    <span class="a_s2"><b></b></span>
+                </div>
+        	</div>
+            <div class="fl a_info">
+            	<p><a href="#" class="p_a"><img src="images/a_tu04.png" /></a></p>
+                <p class="a_tit clear">
+                	<a href="#" class="fl a_news">京东快报</a>
+                    <a href="#" class="fr a_more">更多快报&gt;</a>
+                </p>
+                <div class="a_div">
+                	<ul class="clear">
+                    	<li class="fl a_li">
+                        	<p><a href="#">腕表劲爆秒杀 限量抢</a></p>
+                            <p><a href="#">随新百变 女装折后满减</a></p>
+                            <p><a href="#">森海耳机大让利168元起</a></p>
+                            <p class="mt"><a href="#">好奇2箱最高优惠88元</a></p>
+                        </li>
+                        <li class="fl a_li a_br">
+                        	<p><a href="#">京东JD+计划新政发布</a></p>
+                            <p><a href="#">厨具用户问卷调查</a></p>
+                            <p><a href="#">美女基金经理教你投资</a></p>
+                            <p class="mt"><a href="#">全球购爆款尖货提前放价</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="a_ul">
+                	<li class="a_li1 clear">
+                    	<p class="fl">
+                        	<a href="#">话费<i></i></a>
+                        </p>
+                        <p class="fl bg2">
+                        	<a href="#">机票<i></i></a>
+                        </p>
+                        <p class="fl bg3">
+                        	<a href="#">演出票<i></i></a>
+                        </p>
+                        <p class="fl bg4 p_br">
+                        	<a href="#">游戏<i></i></a>
+                        </p>
+                    </li>
+                    <li class="a_li1 clear">
+                    	<p class="fl p1 bg5 p_bt">
+                        	<a href="#">旅行</a>
+                        </p>
+                        <p class="fl p1 bg6 p_bt">
+                        	<a href="#">电影票</a>
+                        </p>
+                        <p class="fl p1 bg7 p_bt">
+                        	<a href="#">理财</a>
+                        </p>
+                        <p class="fl p1 bg8 p_br p_bt">
+                        	<a href="#">水电煤</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--生活的橱窗-->
+<div class="life">
+	<div class="l_tit clear">
+    	<a href="#" class="fl">生活的橱窗</a>
+        <span class="fl">每一天展示精彩</span>
+    </div>
+    <ul class="l_ul clear">
+    	<li class="fl l_li">
+        	<div class="l_div">
+            	<a href="#" class="a2"><img src="images/ldiv01.jpg" /></a>
+                <div class="d_ms">
+                	<p class="opa"></p>
+                    <div class="d_txt">
+                    	<p class="d_p">品牌街</p>
+                        <p class="d_p1">荣耀X6免费抽</p>
+                        <p class="d_p2">无人机送货</p>
+                        <p class="d_p3"><a href="#">更多品牌</a></p>
+                        <p class="d_p3"><a href="#">进入品牌街</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="l_div">
+            	<a href="#" class="a2"><img src="images/ldiv02.png" /></a>
+                <div class="d_ms">
+                    <div class="d_txt">
+                    	<p class="d_p">京东首发</p>
+                        <p class="d_p1">猛禽电竞耳机</p>
+                        <p class="d_p4 clear"><a href="#" class="a3 fl">全网首发</a></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="fl l_li">
+        	<div class="l_div">
+            	<a href="#" class="a2"><img src="images/ldiv03.png" /></a>
+                <div class="d_ms">
+                    <div class="d_txt">
+                    	<p class="d_p">天天低价</p>
+                        <p class="d_p1">ThinkPad超级</p>
+                        <p class="d_p4 clear"><a href="#" class="a3 fl">满4000减200</a></p>
+                    </div>
+                </div>
+            </div>
+        	<div class="l_div">
+            	<a href="#" class="a2"><img src="images/ldiv01.jpg" /></a>
+                <div class="d_ms">
+                	<p class="opa"></p>
+                    <div class="d_txt">
+                    	<p class="d_p">品牌街</p>
+                        <p class="d_p1">荣耀X6免费抽</p>
+                        <p class="d_p2">无人机送货</p>
+                        <p class="d_p3"><a href="#">更多品牌</a></p>
+                        <p class="d_p3"><a href="#">进入品牌街</a></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="fl l_li">
+        	<div class="l_div">
+            	<a href="#" class="a2"><img src="images/life03.jpg" /></a>
+                <div class="d_ms">
+                	<p class="opa"></p>
+                    <div class="d_txt">
+                    	<p class="d_p">好东西</p>
+                        <p class="d_p1">初语春季新款</p>
+                        <p class="d_p2">全场低至99元</p>
+                        <p class="d_p3"><a href="#">针织穿出极简风</a></p>
+                        <p class="d_p3"><a href="#">逛更多&gt;</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="l_div">
+            	<a href="#" class="a2"><img src="images/ldiv04.png" /></a>
+                <div class="d_ms">
+                    <div class="d_txt">
+                    	<p class="d_p">京东预售</p>
+                        <p class="d_p1">荣耀路由</p>
+                        <p class="d_p4 clear"><a href="#" class="a3 fl">京东强势预售</a></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="fl l_li">
+        	<div class="l_div">
+            	<a href="#" class="a2"><img src="images/ldiv05.jpg" /></a>
+                <div class="d_ms">
+                    <div class="d_txt">
+                    	<p class="d_p">今日团购</p>
+                        <p class="d_p1">麦当劳午餐</p>
+                        <p class="d_p5 clear">
+                        	<span class="fl">团购价</span>
+                            <b class="fl">￥62</b>
+                        </p>
+                        <p class="d_p6 clear"><a href="#" class="fl">参团</a></p>
+                    </div>
+                </div>
+            </div>
+        	<div class="l_div">
+            	<a href="#" class="a2"><img src="images/ldiv01.jpg" /></a>
+                <div class="d_ms">
+                	<p class="opa"></p>
+                    <div class="d_txt">
+                    	<p class="d_p">品牌街</p>
+                        <p class="d_p1">荣耀X6免费抽</p>
+                        <p class="d_p2">无人机送货</p>
+                        <p class="d_p3"><a href="#">更多品牌</a></p>
+                        <p class="d_p3"><a href="#">进入品牌街</a></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul class="l_ul1 clear">
+    	<li class="l_li1 fl">
+        	<div class="fl li1_txt">
+            	<p class="l_p">清洁洗护新选择</p>
+                <p class="l_p1">全场满99减50</p>
+            </div>
+        	<a href="#" class="fr"><img src="images/li1-01.png" /></a>
+        </li>
+        <li class="l_li1 li1_ys fl">
+        	<div class="fl li1_txt">
+            	<p class="l_p">春天"约惠"去</p>
+                <p class="l_p1 p_ys">美孚3M超值特惠</p>
+            </div>
+        	<a href="#" class="fr"><img src="images/li1-02.png" /></a>
+        </li>
+        <li class="l_li1 fl">
+        	<div class="fl li1_txt">
+            	<p class="l_p">海信官方旗舰店开业</p>
+                <p class="l_p1 p_ys">下单送100元E卡</p>
+            </div>
+        	<a href="#" class="fr"><img src="images/li1-03.png" /></a>
+        </li>
+    </ul>
+</div>
+<!--1---8楼-->
+<div class="con">
+<!--1楼-->
+	<div class="floor clear">
+    	<div class="fl f_zuo">
+        	<div class="f_tit clear">
+            	<i class="fl"></i>
+                <a href="#" class="fl f_a">家电通讯</a>
+            </div>
+            <div class="f_div">
+            	<ul class="clear">
+                	<li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">手机</a></p>
+                    	<p class="clear"><a href="#" class="fl">手机配件</a></p>
+                    	<p class="clear"><a href="#" class="fl">话费补贴</a></p>
+                    	<p class="clear"><a href="#" class="fl">生活电器</a></p>
+                    	<p class="clear"><a href="#" class="fl">厨房电器</a></p>
+                    	<p class="clear"><a href="#" class="fl">个护健康</a></p>
+                    	<p class="clear"><a href="#" class="fl">五金家装</a></p>
+                    	<p class="clear"><a href="#" class="fl">冷柜/冰吧</a></p>
+                    </li>
+                    <li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">空调</a></p>
+                    	<p class="clear"><a href="#" class="fl">平板电视</a></p>
+                    	<p class="clear"><a href="#" class="fl">冰箱</a></p>
+                    	<p class="clear"><a href="#" class="fl">洗衣机</a></p>
+                    	<p class="clear"><a href="#" class="fl">热水器</a></p>
+                    	<p class="clear"><a href="#" class="fl">烟机/灶具</a></p>
+                    	<p class="clear"><a href="#" class="fl">家庭影院</a></p>
+                    	<p class="clear"><a href="#" class="fl">汽车用品</a></p>
+                    </li>
+                </ul>
+                <div class="f_tu">
+                	<a href="#"><img src="images/f_tu01.png" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="f_you fl">
+        	<div class="f_tit clear">
+				<div class="fl tab clear">
+                	<span class="on">特价商品</span>
+                    <span>大家电</span>
+                    <span>小家电</span>
+                    <span>手机通讯</span>
+                    <span>汽车五金</span>
+                </div>
+                <div class="fr f_more clear">
+                	<a href="#" class="fl clear">
+                    	<span class="fl">大家电配送</span>
+                        <em class="fl"></em>
+                    </a>
+                    <a href="#" class="fl clear">
+                    	<span class="fl">合约计划说明</span>
+                        <em class="fl"></em>
+                    </a>
+                </div>
+            </div>
+            <ul class="f_ul">
+            	<li>
+                	<div class="li_top clear">
+                    	<div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp01.png" /></a>
+                            <p>SKG 2025 立式原汁机 慢速榨汁机 中国红</p>
+                            <p class="clear">
+                            	<span class="fl">￥459.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="f_tab fl" id="f_tab1">
+                        	<a href="#"><img src="images/f_tab01.jpg" /></a>
+                            <a href="#" class="hide"><img src="images/03.jpg" /></a>
+                    		<a href="#" class="hide"><img src="images/01.jpg" /></a>
+                    		<a href="#" class="hide"><img src="images/02.jpg" /></a>
+                            <div class="tab1" id="tab1">
+                            	<span class="on"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp02.png" /></a>
+                            <p>moto x64GB 镶金红皮限量版中国首发</p>
+                            <p class="f_p1">
+                            	3999
+                            </p>
+                        </div>
+                        <div class="fl f_sp1">
+                        	<p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-1.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-2.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-3.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-4.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-5.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-6.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-7.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-8.png" /></a>
+                            </p>
+                            <p class="clear f_bt">
+                            	<a href="#" class="fl"><img src="images/f_sp1-9.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-10.png" /></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="li_top clear">
+                    	<div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp03.png" /></a>
+                            <p>小家电 春季攻略</p>
+                            <p class="f_p1 f_jx">
+                            	低至9.9元！
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2">
+                        	<a href="#"><img src="images/f_sp04.png" /></a>
+                            <p>酷派 大神 F1青春版(829 7D)智尚白 移动3G手机</p>
+                            <p class="clear">
+                            	<span class="fl">￥599.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2">
+                        	<a href="#"><img src="images/f_sp05.png" /></a>
+                            <p>京东 第四届冰洗节开幕！</p>
+                            <p class="f_p1 f_jx">
+                            	参加抽奖赢多门冰箱咯！
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2">
+                        	<a href="#"><img src="images/f_sp06.png" /></a>
+                            <p>买移动版送大礼包</p>
+                            <p class="f_p1 f_jx">
+                            	2999
+                            </p>
+                        </div>
+                        <div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp07.png" /></a>
+                            <p>每天记得来抢券 玩真格的！</p>
+                            <p class="clear">
+                            	<span class="fl">电器5折再满减！</span>
+                            </p>
+                        </div>
+                        <div class="f_tab fl" id="f_s1">
+                        	<a href="#"><img src="images/logoad.jpg" class="img1" /></a>
+                            <a href="#" class="hide"><img src="images/02.jpg" class="img1" /></a>
+                            <div class="tab1 tab2" id="s_tab1">
+                            	<span class="on"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--2楼-->
+    <div class="floor clear">
+    	<div class="fl f_zuo">
+        	<div class="f_tit clear">
+            	<i class="fl fi2"></i>
+                <a href="#" class="fl f_a">电脑数码</a>
+            </div>
+            <div class="f_div">
+            	<ul class="clear">
+                	<li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">游戏本</a></p>
+                    	<p class="clear"><a href="#" class="fl">笔记本</a></p>
+                    	<p class="clear"><a href="#" class="fl">平板电脑</a></p>
+                    	<p class="clear"><a href="#" class="fl">打印机</a></p>
+                    	<p class="clear"><a href="#" class="fl">鼠标</a></p>
+                    	<p class="clear"><a href="#" class="fl">路由器</a></p>
+                    	<p class="clear"><a href="#" class="fl">显示器</a></p>
+                    	<p class="clear"><a href="#" class="fl">CPU</a></p>
+                    </li>
+                    <li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">数码相机</a></p>
+                    	<p class="clear"><a href="#" class="fl">单反相机</a></p>
+                    	<p class="clear"><a href="#" class="fl">台式电脑</a></p>
+                    	<p class="clear"><a href="#" class="fl">移动硬盘</a></p>
+                    	<p class="clear"><a href="#" class="fl">耳机/耳麦</a></p>
+                    	<p class="clear"><a href="#" class="fl">办公文仪</a></p>
+                    	<p class="clear"><a href="#" class="fl">移动电源</a></p>
+                    	<p class="clear"><a href="#" class="fl">显卡</a></p>
+                    </li>
+                </ul>
+                <div class="f_tu">
+                	<a href="#"><img src="images/f_tu02.png" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="f_you fl">
+        	<div class="f_tit clear">
+				<div class="fl tab clear">
+                	<span class="on">特价商品</span>
+                    <span>笔记本</span>
+                    <span>数码影音</span>
+                    <span>DIY攒机</span>
+                    <span>外设办公</span>
+                </div>
+                <div class="fr f_more clear">
+                	<a href="#" class="fl clear">
+                    	<span class="fl">DIY装机大师</span>
+                        <em class="fl"></em>
+                    </a>
+                    <a href="#" class="fl clear">
+                    	<span class="fl">游戏社区</span>
+                        <em class="fl"></em>
+                    </a>
+                </div>
+            </div>
+            <ul class="f_ul">
+            	<li>
+                	<div class="li_top clear">
+                    	<div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp08.png" /></a>
+                            <p>机械革命X6周年纪念版i7固态860发烧本新到现货</p>
+                            <p class="clear">
+                            	<span class="fl">￥6399.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="f_tab fl">
+                        	<a href="#"><img src="images/f_tab01.jpg" /></a>
+                            <div class="tab1">
+                            	<span class="on"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp09.png" /></a>
+                            <p>360智能摄像机~彩色春季来袭~</p>
+                            <p class="f_p1">
+                            	火爆预约中...
+                            </p>
+                        </div>
+                        <div class="fl f_sp1">
+                        	<ul>
+                            	<li>
+                                	<p class="clear">
+                            			<a href="#" class="fl"><img src="images/f_sp1-11.png" /></a>
+                               	 		<a href="#" class="fl"><img src="images/f_sp1-12.png" /></a>
+                            		</p>
+                            		<p class="clear">
+                            			<a href="#" class="fl"><img src="images/f_sp1-13.png" /></a>
+                                		<a href="#" class="fl"><img src="images/f_sp1-14.png" /></a>
+                            		</p>
+                            		<p class="clear">
+                            			<a href="#" class="fl"><img src="images/f_sp1-15.png" /></a>
+                                		<a href="#" class="fl"><img src="images/f_sp1-16.png" /></a>
+                            		</p>
+                            		<p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-17.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-18.png" /></a>
+                            </p>
+                                </li>
+                            </ul>
+                        	<div class="tab1 tab2 tab03">
+                            	<span class="on"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="li_top clear">
+                    	<div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp10.png" /></a>
+                            <p>月球神器-尼康COOLPIX P900s超长焦数码相机</p>
+                            <p class="clear">
+                            	<span class="fl">￥3699.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2">
+                        	<a href="#"><img src="images/f_sp11.png" /></a>
+                            <p>天章-电脑打印纸-极低风暴</p>
+                            <p class="clear">
+                            	<span class="fl">3联针打纸低至40元！</span>
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2">
+                        	<a href="#"><img src="images/f_sp12.png" /></a>
+                            <p>【全民换新季,女神送福利,买一送一！！】</p>
+                            <p class="clear">
+                            	<span class="fl">一元秒杀！又卖爆了！</span>
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2">
+                        	<a href="#"><img src="images/f_sp13.png" /></a>
+                            <p>组装机霸者归来,百万神券大放送</p>
+                            <p class="clear">
+                            	<span class="fl">￥4388.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp14.png" /></a>
+                            <p>宏碁i5高配大屏幕战斗机器,游戏神器</p>
+                            <p class="clear">
+                            	<span class="fl">￥4699.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="f_tab fl">
+                        	<a href="#"><img src="images/logoad2.png" class="img1" /></a>
+                            <div class="tab1 tab2">
+                            	<span class="on"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--3楼-->
+	<div class="floor clear">
+    	<div class="fl f_zuo">
+        	<div class="f_tit clear">
+            	<i class="fl fi3"></i>
+                <a href="#" class="fl f_a">服饰鞋包</a>
+            </div>
+            <div class="f_div">
+            	<div class="clear f_mr">
+            		<ul class="fl">
+                	<li class="f_li f_li1">
+                    	<p class="clear"><a href="#" class="fl">男装</a></p>
+                    	<p class="clear"><a href="#" class="fl">女装</a></p>
+                    	<p class="clear"><a href="#" class="fl">服装配饰</a></p>
+                    	<p class="clear"><a href="#" class="fl">内衣</a></p>
+                    	<p class="clear"><a href="#" class="fl">女鞋</a></p>
+                    	<p class="clear"><a href="#" class="fl">男鞋</a></p>
+                    	<p class="clear"><a href="#" class="fl">设计师</a></p>
+                    	<p class="clear"><a href="#" class="fl">功能箱包</a></p>
+                        <p class="clear"><a href="#" class="fl">潮流女包</a></p>
+                    	<p class="clear"><a href="#" class="fl">时尚男包</a></p>
+                        <p class="clear"><a href="#" class="fl">户外鞋服</a></p>
+                    	<p class="clear"><a href="#" class="fl">户外装备</a></p>
+                        <p class="clear"><a href="#" class="fl">运动器械</a></p>
+                    	<p class="clear"><a href="#" class="fl">新版运动馆</a></p>
+                    </li>
+                </ul>
+                	<div class="f_tu fl">
+                	<a href="#"><img src="images/f_tu03.png" /></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="f_you fl">
+        	<div class="f_tit clear">
+				<div class="fl tab clear">
+                	<span class="on">特价商品</span>
+                    <span>品牌男装</span>
+                    <span>品牌女装</span>
+                    <span>鞋靴箱包</span>
+                    <span>运动户外</span>
+                </div>
+                <a href="#" class="fr f_a1 clear">
+                    	<em class="fl"></em>
+                        <strong class="fl">海外购</strong>
+                        <b class="fl"></b>
+                    </a>
+            </div>
+            <ul class="f_ul">
+            	<li>
+                	<div class="f_div1 clear">
+                    	<div class="fl f_sp3">
+                        	<div class="woman">
+                            	<a href="#"><img src="images/f_sp3-1.png" /></a>
+                                <a href="#" class="jie"></a>
+                            </div>
+                            <div class="woman">
+                            	<a href="#"><img src="images/f_sp3-2.png" /></a>
+                            	<a href="#" class="jie"></a>
+                            </div>
+                        </div>
+                        <div class="fl f_sp3">
+                        	<a href="#"><img src="images/f_sp3-3.png" /></a>
+                        </div>
+                        <div class="fl f_sp3">
+                        	<div class="woman">
+                            	<a href="#"><img src="images/f_sp3-4.png" /></a>
+                                <a href="#" class="jie"></a>
+                            </div>
+                            <div class="woman">
+                            	<a href="#"><img src="images/f_sp3-5.png" /></a>
+                            	<a href="#" class="jie"></a>
+                            </div>
+                        </div>
+                        <div class="fl f_sp3">
+                        	<a href="#"><img src="images/f_sp3-6.png" /></a>
+                        </div>
+                        <div class="fl f_sp3 f_br">
+                        	<div class="woman">
+                            	<a href="#"><img src="images/f_sp3-7.png" /></a>
+                                <a href="#" class="jie"></a>
+                            </div>
+                            <div class="woman">
+                            	<a href="#"><img src="images/f_sp3-8.png" /></a>
+                            	<a href="#" class="jie"></a>
+                            </div>
+                        </div>
+                        <div class="fl f_sp3">
+                        	<div class="f_sp1 f_bt1">
+                        	<p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-19.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-20.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-21.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-22.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-23.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-24.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-25.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-26.png" /></a>
+                            </p>
+                            <p class="clear f_bt">
+                            	<a href="#" class="fl"><img src="images/f_sp1-27.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-28.png" /></a>
+                            </p>
+                        </div>
+                        	<div class="f_tab">
+                        	<a href="#"><img src="images/logoad3.png" class="img1" /></a>
+                            <div class="tab1 tab2">
+                            	<span class="on"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--4楼-->
+	<div class="floor clear">
+    	<div class="fl f_zuo">
+        	<div class="f_tit clear">
+            	<i class="fl fi4"></i>
+                <a href="#" class="fl f_a">美容珠宝</a>
+            </div>
+            <div class="f_div">
+            	<ul class="clear">
+                	<li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">棉布护肤</a></p>
+                    	<p class="clear"><a href="#" class="fl">彩妆香水</a></p>
+                    	<p class="clear"><a href="#" class="fl">洗发护发</a></p>
+                    	<p class="clear"><a href="#" class="fl">身体护肤</a></p>
+                    	<p class="clear"><a href="#" class="fl">口腔护理</a></p>
+                    	<p class="clear"><a href="#" class="fl">女性护理</a></p>
+                    	<p class="clear"><a href="#" class="fl">美容养颜</a></p>
+                    	<p class="clear"><a href="#" class="fl">礼品</a></p>
+                    </li>
+                    <li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">瑞士名表</a></p>
+                    	<p class="clear"><a href="#" class="fl">国产名表</a></p>
+                    	<p class="clear"><a href="#" class="fl">时尚腕表</a></p>
+                    	<p class="clear"><a href="#" class="fl">钻石</a></p>
+                    	<p class="clear"><a href="#" class="fl">翡翠珍珠</a></p>
+                    	<p class="clear"><a href="#" class="fl">时尚饰品</a></p>
+                    	<p class="clear"><a href="#" class="fl">火机烟具</a></p>
+                    	<p class="clear"><a href="#" class="fl">奢侈品</a></p>
+                    </li>
+                </ul>
+                <div class="f_tu">
+                	<a href="#"><img src="images/f_tu04.png" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="f_you fl">
+        	<div class="f_tit clear">
+				<div class="fl tab clear">
+                	<span class="on">特价商品</span>
+                    <span>美容化妆</span>
+                    <span>个人护理</span>
+                    <span>黄金珠宝</span>
+                    <span>钟表首饰</span>
+                </div>
+                <a href="#" class="fr f_a1 f_a1-bg clear">
+                    <em class="fl f_em"></em>
+                    <strong class="fl f_s">生活馆</strong>
+                    <b class="fl f_b"></b>
+                </a>
+            </div>
+            <ul class="f_ul">
+            	<li>
+                	<div class="li_top clear">
+                    	<div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp15.png" /></a>
+                            <p>彩妆馆春季特惠中</p>
+                            <p class="f_p1 f_jx">
+                            	最高满139送139
+                            </p>
+                        </div>
+                        <div class="f_tab fl">
+                        	<a href="#"><img src="images/f_tab01.jpg" /></a>
+                            <div class="tab1">
+                            	<span class="on"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp16.png" /></a>
+                            <p>特惠德国拓意卡守护星座系列 便携化妆镜</p>
+                            <p class="clear">
+                            	<span class="fl">￥198.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="fl f_sp1">
+                        	<p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-29.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-30.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-31.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-32.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-33.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-34.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-35.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-36.png" /></a>
+                            </p>
+                            <p class="clear f_bt">
+                            	<a href="#" class="fl"><img src="images/f_sp1-37.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-38.png" /></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="li_top clear">
+                    	<div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp17.png" /></a>
+                            <p>春天来了！ Duang~的一下靓起来</p>
+                            <p class="f_p1">
+                            	美白防晒低至4折
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2">
+                        	<a href="#"><img src="images/f_sp18.png" /></a>
+                            <p>论剑巴展之巅！</p>
+                            <p class="f_p1 f_jx">
+                            	秒杀天天抢！
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2">
+                        	<a href="#"><img src="images/f_sp19.png" /></a>
+                            <p>直击巴塞尔钟表展</p>
+                            <p class="f_p1 f_jx">
+                            	500减50最高减1000！
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2">
+                        	<a href="#"><img src="images/f_sp20.png" /></a>
+                            <p>周大福 CTF蝴蝶结 千足金 黄金戒指</p>
+                            <p class="clear">
+                            	<span class="fl">￥1111.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp21.png" /></a>
+                            <p>如愿满金星小叶紫檀手串男女佛珠手链</p>
+                            <p class="clear">
+                            	<span class="fl">￥468.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="f_tab fl">
+                        	<a href="#"><img src="images/logoad4.png" class="img1" /></a>
+                            <div class="tab1 tab2">
+                            	<span class="on"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--5楼-->
+	<div class="floor clear">
+    	<div class="fl f_zuo">
+        	<div class="f_tit clear">
+            	<i class="fl fi5"></i>
+                <a href="#" class="fl f_a">居家生活</a>
+            </div>
+            <div class="f_div">
+            	<ul class="clear">
+                	<li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">家具</a></p>
+                    	<p class="clear"><a href="#" class="fl">家用清洁</a></p>
+                    	<p class="clear"><a href="#" class="fl">水具/酒具</a></p>
+                    	<p class="clear"><a href="#" class="fl">厨房配件</a></p>
+                    	<p class="clear"><a href="#" class="fl">床品套件</a></p>
+                    	<p class="clear"><a href="#" class="fl">被子</a></p>
+                    	<p class="clear"><a href="#" class="fl">家装建材</a></p>
+                    	<p class="clear"><a href="#" class="fl">洗衣液</a></p>
+                    </li>
+                    <li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">灯具照明</a></p>
+                    	<p class="clear"><a href="#" class="fl">宠物生活</a></p>
+                    	<p class="clear"><a href="#" class="fl">烹饪锅具</a></p>
+                    	<p class="clear"><a href="#" class="fl">餐具</a></p>
+                    	<p class="clear"><a href="#" class="fl">枕芯</a></p>
+                    	<p class="clear"><a href="#" class="fl">蚊帐</a></p>
+                    	<p class="clear"><a href="#" class="fl">家装软饰</a></p>
+                    	<p class="clear"><a href="#" class="fl">生活用纸</a></p>
+                    </li>
+                </ul>
+                <div class="f_tu">
+                	<a href="#"><img src="images/f_tu05.png" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="f_you fl">
+        	<div class="f_tit clear">
+				<div class="fl tab clear">
+                	<span class="on">特价商品</span>
+                    <span>家居家纺</span>
+                    <span>厨具餐具</span>
+                    <span>家居家装</span>
+                    <span>自营家居</span>
+                </div>
+                <a href="#" class="fr f_a1 f_a1-bg1 clear">
+                    <em class="fl f_em1"></em>
+                    <strong class="fl f_s1">家装城</strong>
+                    <b class="fl f_b1"></b>
+                </a>
+            </div>
+            <ul class="f_ul">
+            	<li>
+                	<div class="li_top clear">
+                    	<div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp22.png" /></a>
+                            <p>春情无限宜室宜家</p>
+                            <p class="f_p1 f_jx">
+                            	家纺满200减40
+                            </p>
+                        </div>
+                        <div class="f_tab fl">
+                        	<a href="#"><img src="images/f_tab01.jpg" /></a>
+                            <div class="tab1">
+                            	<span class="on"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp23.png" /></a>
+                            <p>约惠睡眠</p>
+                            <p class="f_p1 f_jx">
+                            	自营211限时达
+                            </p>
+                        </div>
+                        <div class="fl f_sp1">
+                        	<p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-39.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-40.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-41.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-42.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-43.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-44.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-45.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-46.png" /></a>
+                            </p>
+                            <p class="clear f_bt">
+                            	<a href="#" class="fl"><img src="images/f_sp1-47.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-48.png" /></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="li_top clear">
+                    	<div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp24.png" /></a>
+                            <p>家装大牌特惠</p>
+                            <p class="f_p1 f_jx">
+                            	低至3折
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2">
+                        	<a href="#"><img src="images/f_sp25.png" /></a>
+                            <p>舒洁巨献</p>
+                            <p class="f_p1 f_jx">
+                            	每满59减15
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2">
+                        	<a href="#"><img src="images/f_sp26.png" /></a>
+                            <p>美标 新款带除臭智能马桶盖板智能冲水</p>
+                            <p class="clear">
+                            	<span class="fl">￥1798.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2">
+                        	<a href="#"><img src="images/f_sp27.png" /></a>
+                            <p>百家汇沙发布艺沙发小户型沙发</p>
+                            <p class="clear">
+                            	<span class="fl">￥2659.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp28.png" /></a>
+                            <p>海兴海豚透明儿童玩具储物柜</p>
+                            <p class="clear">
+                            	<span class="fl">￥118.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="f_tab fl">
+                        	<a href="#"><img src="images/logoad5.png" class="img1" /></a>
+                            <div class="tab1 tab2">
+                            	<span class="on"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--6楼-->
+	<div class="floor clear">
+    	<div class="fl f_zuo">
+        	<div class="f_tit clear">
+            	<i class="fl fi6"></i>
+                <a href="#" class="fl f_a">母婴玩具</a>
+            </div>
+            <div class="f_div f_div2">
+            	<ul class="clear">
+                	<li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">奶粉</a></p>
+                    	<p class="clear"><a href="#" class="fl">喂养用品</a></p>
+                    	<p class="clear"><a href="#" class="fl">洗护用品</a></p>
+                    	<p class="clear"><a href="#" class="fl">妈妈专区</a></p>
+                    	<p class="clear"><a href="#" class="fl">童车童床</a></p>
+                    </li>
+                    <li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">营养辅食</a></p>
+                    	<p class="clear"><a href="#" class="fl">尿裤湿巾</a></p>
+                    	<p class="clear"><a href="#" class="fl">寝具服饰</a></p>
+                    	<p class="clear"><a href="#" class="fl">玩具乐器</a></p>
+                    	<p class="clear"><a href="#" class="fl">童装童鞋</a></p>
+                    </li>
+                </ul>
+                <div class="f_tu">
+                	<a href="#"><img src="images/f_tu06.png" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="f_you fl">
+        	<div class="f_tit clear">
+				<div class="fl tab clear">
+                	<span class="on">特价商品</span>
+                    <span>母婴食品</span>
+                    <span>母婴用品</span>
+                    <span>车床玩具</span>
+                    <span>童装孕产</span>
+                </div>
+            </div>
+            <ul class="f_ul">
+            	<li>
+                	<div class="li_top clear">
+                    	<div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp29.png" /></a>
+                            <p>母婴用品开春联合满减</p>
+                            <p class="f_p1 f_jx">
+                            	满200-50
+                            </p>
+                        </div>
+                        <div class="f_tab fl">
+                        	<a href="#"><img src="images/f_tab01.jpg" /></a>
+                            <div class="tab1">
+                            	<span class="on"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp30.png" /></a>
+                            <p>童装宝宝背带裤婴儿吊带裤女童牛仔裤</p>
+                            <p class="clear">
+                            	<span class="fl">￥86.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="fl f_sp1">
+                        	<p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-49.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-50.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-51.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-52.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-53.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-54.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-55.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-56.png" /></a>
+                            </p>
+                            <p class="clear f_bt">
+                            	<a href="#" class="fl"><img src="images/f_sp1-57.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-58.png" /></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="li_top li_top1 clear">
+                    	<div class="f_sp4 fl clear">
+                        	<a href="#" class="fl"><img src="images/f_sp4-1.png" /></a>
+                            <div class="fl">
+                            	<p>进口大牌奶粉！</p>
+                                <p class="sp4_p">送春游出行好礼！</p>
+                            </div>
+                        </div>
+                        <div class="f_sp4 fl clear">
+                        	<a href="#" class="fl"><img src="images/f_sp4-2.png" /></a>
+                            <div class="fl">
+                            	<p>宝宝狂欢购</p>
+                                <p class="sp4_p">大牌爆款秒杀</p>
+                            </div>
+                        </div>
+                        <div class="f_sp4 fl clear">
+                        	<a href="#" class="fl"><img src="images/f_sp4-3.png" /></a>
+                            <div class="fl">
+                            	<p>特步童鞋3-6岁女童小童可爱休闲鞋</p>
+                                <p class="clear">
+                            		<span class="fl">￥119.</span><b class="fl">00</b>
+                            	</p>
+                            </div>
+                        </div>
+                        <div class="fl f_div3">
+                        	<p class="clear">
+                            	<a href="#" class="fl">春天在哪里呀，春天在哪里</a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl">乐器全场大惠，响亮音乐，独奏梦</a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl">辣妈节火爆开幕 满300减300</a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl">花王、大王、尤妮佳低至105元</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--7楼-->
+	<div class="floor clear">
+    	<div class="fl f_zuo">
+        	<div class="f_tit clear">
+            	<i class="fl fi7"></i>
+                <a href="#" class="fl f_a">食品保健</a>
+            </div>
+            <div class="f_div f_div2">
+            	<ul class="clear">
+                	<li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">进口食品</a></p>
+                    	<p class="clear"><a href="#" class="fl">休闲食品</a></p>
+                    	<p class="clear"><a href="#" class="fl">冲调饮品</a></p>
+                    	<p class="clear"><a href="#" class="fl">营养健康</a></p>
+                    	<p class="clear"><a href="#" class="fl">传统滋补</a></p>
+                    </li>
+                    <li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">地方特产</a></p>
+                    	<p class="clear"><a href="#" class="fl">中外名酒</a></p>
+                    	<p class="clear"><a href="#" class="fl">粮油调味</a></p>
+                    	<p class="clear"><a href="#" class="fl">营养成分</a></p>
+                    	<p class="clear"><a href="#" class="fl">生鲜食品</a></p>
+                    </li>
+                </ul>
+                <div class="f_tu">
+                	<a href="#"><img src="images/f_tu07.png" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="f_you fl">
+        	<div class="f_tit clear">
+				<div class="fl tab clear">
+                	<span class="on">特价商品</span>
+                    <span>酒饮冲调</span>
+                    <span>中外美食</span>
+                    <span>营养健康</span>
+                    <span>粮油生鲜</span>
+                </div>
+            </div>
+            <ul class="f_ul">
+            	<li>
+                	<div class="li_top clear">
+                    	<div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp31.png" /></a>
+                            <p>烟花三月 京东自营零食踏青季</p>
+                            <p class="f_p1">
+                            	最高满减199减50
+                            </p>
+                        </div>
+                        <div class="f_tab fl">
+                        	<a href="#"><img src="images/f_tab01.jpg" /></a>
+                            <div class="tab1">
+                            	<span class="on"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="fl f_sp">
+                        	<a href="#"><img src="images/f_sp32.png" /></a>
+                            <p>康富丽 破壁灵芝孢子粉胶囊</p>
+                            <p class="clear">
+                            	<span class="fl">￥128.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="fl f_sp1">
+                        	<p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-59.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-60.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-61.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-62.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-63.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-64.png" /></a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl"><img src="images/f_sp1-65.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-66.png" /></a>
+                            </p>
+                            <p class="clear f_bt">
+                            	<a href="#" class="fl"><img src="images/f_sp1-67.png" /></a>
+                                <a href="#" class="fl"><img src="images/f_sp1-68.png" /></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="li_top li_top1 clear">
+                    	<div class="f_sp4 fl clear">
+                        	<a href="#" class="fl"><img src="images/f_sp4-4.png" /></a>
+                            <div class="fl">
+                            	<p>店庆抢鲜，爆款3.18元起</p>
+                                <p class="sp4_p">红包抢不停满99减5元</p>
+                            </div>
+                        </div>
+                        <div class="f_sp4 fl clear">
+                        	<a href="#" class="fl"><img src="images/f_sp4-5.png" /></a>
+                            <div class="fl">
+                            	<p>国窖三阳开泰</p>
+                                <p class="sp4_p">超高价回购</p>
+                            </div>
+                        </div>
+                        <div class="f_sp4 fl clear">
+                        	<a href="#" class="fl"><img src="images/f_sp4-6.png" /></a>
+                            <div class="fl">
+                            	<p>诺泰 眼部按摩器 眼保仪 护眼仪 防近视去眼袋黑眼圈 眼睛按摩护眼罩</p>
+                                <p class="clear">
+                            		<span class="fl">￥119.</span><b class="fl">00</b>
+                            	</p>
+                            </div>
+                        </div>
+                        <div class="fl f_div3">
+                        	<p class="clear">
+                            	<a href="#" class="fl">鱼跃3M强强联合 抗雾霾专场</a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl">营养保健开春大促, 不止2折</a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl">春天要吃清淡油, 菜籽油满99元减10</a>
+                            </p>
+                            <p class="clear">
+                            	<a href="#" class="fl">踏青带上绝味 128-30啦</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--8楼-->
+	<div class="floor clear">
+    	<div class="fl f_zuo">
+        	<div class="f_tit clear">
+            	<i class="fl fi8"></i>
+                <a href="#" class="fl f_a">图书音像</a>
+            </div>
+            <div class="f_div f_div4">
+            	<ul class="clear">
+                	<li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">数字音乐</a></p>
+                    	<p class="clear"><a href="#" class="fl">电子书</a></p>
+                    	<p class="clear"><a href="#" class="fl">音乐</a></p>
+                    	<p class="clear"><a href="#" class="fl">影视</a></p>
+                    	<p class="clear"><a href="#" class="fl">教育音像</a></p>
+                    	<p class="clear"><a href="#" class="fl">礼品书</a></p>
+                    	<p class="clear"><a href="#" class="fl">原版书</a></p>
+                    </li>
+                    <li class="fl f_li">
+                    	<p class="clear"><a href="#" class="fl">文学</a></p>
+                    	<p class="clear"><a href="#" class="fl">励志</a></p>
+                    	<p class="clear"><a href="#" class="fl">少儿</a></p>
+                    	<p class="clear"><a href="#" class="fl">考试</a></p>
+                    	<p class="clear"><a href="#" class="fl">历史</a></p>
+                    	<p class="clear"><a href="#" class="fl">旅游</a></p>
+                    	<p class="clear"><a href="#" class="fl">计算机</a></p>
+                    </li>
+                </ul>
+                <div class="f_tu">
+                	<a href="#"><img src="images/f_tu08.png" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="f_you li_top5 fl">
+        	<div class="f_tit clear">
+				<div class="fl tab clear">
+                	<span class="on">特价商品</span>
+                    <span>文学/经营</span>
+                    <span>生活少儿</span>
+                    <span>数字商品</span>
+                    <span>音像商品</span>
+                </div>
+            </div>
+            <ul class="f_ul">
+            	<li>
+                	<div class="li_top li_top2 li_top5 clear">
+                    	<div class="fl f_sp f_sh">
+                        	<a href="#"><img src="images/f_sp33.png" /></a>
+                            <p>社科每满100减30</p>
+                            <p class="clear">
+                            	<span class="fl">￥28.</span><b class="fl">40</b>
+                            </p>
+                        </div>
+                        <div class="f_tab fl f_sh">
+                        	<a href="#"><img src="images/f_tab01.jpg" class="img2" /></a>
+                            <div class="tab1">
+                            	<span class="on"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+						<div class="fl f_sp f_sh">
+                        	<a href="#"><img src="images/f_sp34.png" /></a>
+                            <p>生活艺术每满80减20</p>
+                            <p class="clear">
+                            	<span class="fl">￥25.</span><b class="fl">20</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="li_top li_top2 li_top5 clear">
+                    	<div class="fl f_sp f_sh">
+                        	<a href="#"><img src="images/f_sp35.png" /></a>
+                            <p>张学友 2014全新大碟</p>
+                            <p class="clear">
+                            	<span class="fl">￥39.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2 f_sh">
+                        	<a href="#"><img src="images/f_sp36.png" /></a>
+                            <p>京东电子书畅读 VIP促销</p>
+                            <p class="clear">
+                            	<span class="fl">￥89.</span><b class="fl">90</b>
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2 f_sh">
+                        	<a href="#"><img src="images/f_sp37.png" /></a>
+                            <p>幼儿早教音乐故事</p>
+                            <p class="clear">
+                            	<span class="fl">￥1.99</span>
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sp2 f_sh">
+                        	<a href="#"><img src="images/f_sp38.png" /></a>
+                            <p>少儿图书年中榜</p>
+                            <p class="clear">
+                            	<span class="fl">￥52.</span><b class="fl">50</b>
+                            </p>
+                        </div>
+                        <div class="fl f_sp f_sh">
+                        	<a href="#"><img src="images/f_sp39.png" /></a>
+                            <p>【布鲁精灵】婴幼儿学龄</p>
+                            <p class="clear">
+                            	<span class="fl">￥89.</span><b class="fl">00</b>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="fl f_sp5">
+        	<div class="f_la">
+        		<div class="f_tit">
+        			<div class="tab3 clear">
+                		<span class="on">图书</span>
+                    	<span>音乐</span>
+                    	<span>影视</span>
+                    	<span>教育</span>
+                    	<span>电子书</span>
+                	</div>
+            	</div>
+                <div class="x_ka">
+                	<div class="la_ka">
+                    	<p class="clear">
+                        	<span class="fl la_s1">1</span>
+                            <a href="#" class="fl">从0到1开启商业与未来</a>
+                            <b class="fr">￥27.00</b>
+                        </p>
+                        <p class="clear">
+                        	<span class="fl la_s1">2</span>
+                            <a href="#" class="fl">平凡的世界(套装共3)</a>
+                            <b class="fr">￥55.10</b>
+                        </p>
+                        <p class="clear">
+                        	<span class="fl la_s1">3</span>
+                            <a href="#" class="fl">星火英语四级试题 4级</a>
+                            <b class="fr">￥23.50</b>
+                        </p>
+                        <p class="clear">
+                        	<span class="fl la_s2">4</span>
+                            <a href="#" class="fl">从0到1开启商业与未来</a>
+                            <b class="fr">￥19.90</b>
+                        </p>
+                        <p class="clear">
+                        	<span class="fl la_s2">5</span>
+                            <a href="#" class="fl">从0到1开启商业与未来</a>
+                            <b class="fr">￥99.50</b>
+                        </p>
+                        <p class="clear">
+                        	<span class="fl la_s2">6</span>
+                            <a href="#" class="fl">从0到1开启商业与未来</a>
+                            <b class="fr">￥24.40</b>
+                        </p>
+                        <p class="clear">
+                        	<span class="fl la_s2">7</span>
+                            <a href="#" class="fl">从0到1开启商业与未来</a>
+                            <b class="fr">￥18.30</b>
+                        </p>
+                        <p class="clear">
+                        	<span class="fl la_s2">8</span>
+                            <a href="#" class="fl">从0到1开启商业与未来</a>
+                            <b class="fr">￥23.70</b>
+                        </p>
+                        <p class="clear">
+                        	<span class="fl la_s2">9</span>
+                            <a href="#" class="fl">从0到1开启商业与未来</a>
+                            <b class="fr">￥29.60</b>
+                        </p>
+                        <p class="clear">
+                        	<span class="fl la_s2">10</span>
+                            <a href="#" class="fl">从0到1开启商业与未来</a>
+                            <b class="fr">￥26.10</b>
+                        </p>
+                    </div>
+                </div>
+        	</div>
+        </div>
+        
+    </div>
+</div>
+<!--热门晒单,热门活动-->
+<div class="hot clear">
+	<div class="fl h_k clear">
+    	<div class="h_info fl">
+        	<p class="h_tit"><a href="#">热门晒单</a></p>
+            <ul>
+            	<li class="h_li clear">
+                	<div class="fl h_tu">
+                    	<a href="#"><img src="images/h_tu1.png" /></a>
+                        <img src="images/h_s1.png" class="h_s" />
+                    </div>
+                    <div class="fl h_ms">
+                    	<a class="h_p" href="#">嘉实多 (Castrol) 磁护 5W-30 4L 启停保全合成机油润滑油</a>
+                        <p class="h_p1">京东购买的嘉实多机油和三滤！不用再去4S店花冤枉钱了</p>
+                    </div>
+                    <img src="images/h_s5.png" class="h_s1" />
+                </li>
+                <li class="h_li h_bt clear">
+                	<div class="fl h_tu">
+                    	<a href="#"><img src="images/h_tu3.png" /></a>
+                        <img src="images/h_s1.png" class="h_s" />
+                    </div>
+                    <div class="fl h_ms">
+                    	<a class="h_p" href="#">嘉实多 (Castrol) 磁护 5W-30 4L 启停保全合成机油润滑油</a>
+                        <p class="h_p1">京东购买的嘉实多机油和三滤！不用再去4S店花冤枉钱了</p>
+                    </div>
+                    <img src="images/h_s5.png" class="h_s1" />
+                </li>
+            </ul>
+        </div>
+        <div class="h_info fl h_br">
+        	<p class="h_tit"><a href="#">热门活动</a></p>
+            <ul>
+            	<li class="h_li clear">
+                	<div class="fl h_tu">
+                    	<a href="#"><img src="images/h_tu2.png" /></a>
+                        <img src="images/h_s2.png" class="h_s" />
+                    </div>
+                    <div class="fl h_ms">
+                    	<a class="h_p" href="#">京东 第4届冰洗节</a>
+                        <p class="h_p1">每满1000立减100 买就免费抽iPad</p>
+                    </div>
+                    <img src="images/h_s5.png" class="h_s1" />
+                </li>
+                <li class="h_li h_bt clear">
+                	<div class="fl h_tu">
+                    	<a href="#"><img src="images/h_tu4.png" /></a>
+                        <img src="images/h_s2.png" class="h_s" />
+                    </div>
+                    <div class="fl h_ms">
+                    	<a class="h_p" href="#">京东 第4届冰洗节</a>
+                        <p class="h_p1">每满1000立减100 买就免费抽iPad</p>
+                    </div>
+                    <img src="images/h_s5.png" class="h_s1" />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="fr">
+    	<div class="h_k h_kw">
+        	<p class="h_tit clear">
+            	<a href="#" class="fl">在线读书</a>
+                <a class="fr h_a">更多在线读书&gt;</a>
+            </p>
+            <div class="h_div clear">
+            	<a class="fl hot_a" href="#"><img src="images/hot01.png" /></a>	
+                <ul class="fl hot_ul">
+                	<li class="clear"><a class="fl" href="#">111</a></li>
+                	<li class="clear"><a class="fl" href="#">222</a></li>
+                	<li class="clear"><a class="fl" href="#">333</a></li>
+                	<li class="clear"><a class="fl" href="#">444</a></li>
+                </ul>	
+            </div>
+        </div>
+        <div class="hot_sel">
+        	<p class="clear"><a class="hot_p_a fl" href="#">订阅促销信息</a></p>
+            <div class="hot_e clear">
+            	<input class="fl input_e" type="text" placeholder="请输入您的E-mail地址" />
+                <a class="fl hot_buy" href="#">订阅</a>
+                <span></span>
+            </div>	
+        </div>
+    </div>
+</div>
+<!--购物指南,配送方式...-->
+<div class="buy_service clear">
+	<div class="bs_way fl">
+    	<b class="fl"></b>
+        <dl class="fl">
+        	<dt><a href="#">特色服务</a></dt>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+        </dl>
+    </div>		
+	<div class="bs_way fl">
+    	<b class="fl b1"></b>
+        <dl class="fl">
+        	<dt><a href="#">特色服务</a></dt>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+        </dl>
+    </div>		
+	<div class="bs_way fl">
+    	<b class="fl b2"></b>
+        <dl class="fl">
+        	<dt><a href="#">特色服务</a></dt>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+        </dl>
+    </div>		
+	<div class="bs_way fl">
+    	<b class="fl b3"></b>
+        <dl class="fl">
+        	<dt><a href="#">特色服务</a></dt>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+        </dl>
+    </div>		
+	<div class="bs_way fl">
+    	<b class="fl b4"></b>
+        <dl class="fl">
+        	<dt><a href="#">特色服务</a></dt>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+            <dd><a href="#">夺宝岛</a></dd>
+        </dl>
+    </div>		
+    <div class="local_info fl">
+    	<p class="local_p1">京东自营覆盖区县</p>
+        <p class="local_p2">京东已向全国1914个区县提供自营配送服务,支持货到付款、POS机刷卡和售后上门服务</p>
+        <p class="clear"><a class="local_see fr" href="#">查看详情&gt;&gt;</a></p>	
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+	<div>
+    	<a href="#">关于我们</a>|
+    	<a href="#">联系我们</a>|
+    	<a href="#">商家入驻</a>|
+    	<a href="#">营销中心</a>|
+    	<a href="#">手机京东</a>|
+    	<a href="#">友情链接</a>|
+    	<a href="#">销售联盟</a>|
+    	<a href="#">京东社区</a>|
+    	<a href="#">京东公益</a>|
+    	<a href="#">English</a>|
+    	<a href="#">ContactUs</a>
+    </div>	
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</div>
+</body>
+</html>

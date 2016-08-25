@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+/*logo,搜索栏*/
+/*logo*/
+.ls {width:1210px;margin:0 auto;height:90px;position:relative;} h1 {margin-top:24px;}
+h1 a {display:block;width:159px;height:42px;background:url(../images/spirite.png) -106px 0px;text-indent:-9999em;}
+/*二维码*/
+.erwei {width:133px;height:61px;border:1px solid #efefef;padding:3px 0 2px 3px;margin-top:10px;position:relative;}
+.erwei a {width:61px;height:61px;background:url(../images/spirite.png) -266px 0;margin-right:6px;}
+.erwei .erwei_d {padding-top:7px;text-align:center;}
+.erwei .erwei_d p {width:61px;height:16px;color:#333;line-height:12px;}
+.erwei .erwei_d .e_p {margin-top:2px;background:url(../images/spirite.png) -328px 0;height:15px;}
+.close {position:absolute;right:-1px;top:-1px;cursor:pointer;}
+
+/*我的京东--购物车结算*/
+.jd_js {margin:24px 10px 0 20px;width:242px;} .l01,.r01 {position:relative;} .l01 a,.r01 a {display:block;}
+
+.my_jd {width:104px;height:30px;border:1px solid #efefef;background:#f7f7f7;margin-right:10px;}
+.my_jd em {width:17px;height:17px;background:url(../images/spirite.png) -390px 0;margin:6px 7px 0;}
+.my_jd span,.my_car .s1 {color:#666;line-height:12px;margin-top:8px;margin-right:8px;}
+.my_jd i {width:10px;height:5px;background:url(../images/spirite.png) -429px 0;margin-top:12px;transition:all 0.3s ease-in-out;}
+.my_jd:hover i {transform:rotate(180deg);}
+
+.my_car {width:124px;height:30px;border:1px solid #efefef;background:#f7f7f7;position:relative;}
+.my_car em {width:20px;height:16px;background:url(../images/spirite.png) -408px 0;margin:6px 6px 0;}
+.my_car i {width:5px;height:10px;background:url(../images/spirite.png) -440px 0;margin-top:10px;}
+
+.my_car .count {position:absolute;left:21px;top:-12px;height:17px;line-height:17px;color:#f5ffff;background:#e60000;font-size:11px;padding:0 6px;border-radius:5px 5px 5px 0;}
+
+/*搜索框*/
+.search {margin-top:19px;}
+.search input {width:411px;height:30px;border:3px solid #e4393c;font-size:14px;padding-left:5px;}
+.search .sousuo {width:78px;height:36px;background:#e4393c;color:#fff;text-align:center;line-height:36px;font-size:14px;font-weight:bold;}
+.search .remen {height:24px;}
+.search .remen span,.search .remen a {color:#999;line-height:12px;margin-top:6px;margin-right:8px;}
+.search .remen a {margin-right:11px;} .search .remen .yanse {color:#e4393c;}
+
+
